@@ -1,0 +1,56 @@
+.header-bar {
+    fill: #f0f0f0;
+    fill: var(--color-text-alt, #f0f0f0);
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
+}
+
+.header-bar .row {
+    background-color: #1c374c;
+    background-color: var(--color-bg-alt, #1c374c);
+}
+
+.header-bar .container {
+    flex-direction: row;
+}
+
+.header-bar-phone__link,
+.header-bar-email__link,
+.header-bar-address__link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    gap: calc(.5 * var(--size-base, 1rem));
+}
+
+
+.header-nav .row {
+    background-color: #fff;
+    background-color: var(--color-bg, #fff);
+    color: #222;
+    color: var(--color-text, #222);
+}
+
+.header-nav .container {
+    padding: 1em;
+    padding: calc(1 * var(--size-base, 1rem));
+    display: flex;
+    flex-direction: row;
+}
+
+.header-nav__menu {
+    display: flex;
+    gap: 1rem;
+    gap: calc(1 * var(--size-base, 1rem));
+    margin-left: auto;
+}
+
+.nav-menu-item__link {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu-item__link:hover {
+    color: #02959b;
+    color: var(--color-text-accent, #02959b);
+}

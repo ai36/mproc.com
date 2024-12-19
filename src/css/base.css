@@ -1,0 +1,21 @@
+.row {
+    width: 100%;
+}
+
+.col {
+    width: clamp(375px, 100%, 1400px);
+    margin: auto;
+}
+
+.container {
+    padding: 2rem;
+    padding: calc(2 * var(--size-base, 1rem));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 2rem;
+    gap: calc(2 * var(--size-base, 1rem));
+}

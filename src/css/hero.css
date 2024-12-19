@@ -1,0 +1,38 @@
+.hero .row {
+    height: calc(100dvh - 230px);
+    background-image: conic-gradient(#0009, #0009), url(/img/hero-pic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 640px;
+}
+
+.hero .col {
+    display: grid;
+    place-content: center start;
+    height: 100%;
+}
+
+.hero .container {
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
+
+    display: flex;
+    align-items: flex-start;
+    gap: unset;
+}
+
+.hero__pretitle {
+    font-size: 160%;
+    text-transform: capitalize;
+}
+
+.hero__title {
+    font-size: 500%;
+    line-height: 1;
+}
+
+.hero__desc {
+    font-size: 120%;
+    margin-bottom: 3em;
+}

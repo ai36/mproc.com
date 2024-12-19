@@ -1,0 +1,26 @@
+.present .row {
+    background-image: url(/img/present-halfwidth.jpg);
+    background-size: contain;
+    background-position: calc(50% - 400px) 100%;
+    background-repeat: no-repeat;
+}
+
+.present .col {
+    padding: 2rem 0;
+    padding: calc(2 * var(--size-base, 1rem)) 0;
+}
+
+.present .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 500px;
+}
+
+.present-content__pretitle {
+    font-size: 160%;
+    font-weight: 600;
+}
+
+.present-content__action {
+    margin-top: 1rem;
+}
