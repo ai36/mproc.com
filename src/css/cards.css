@@ -1,0 +1,115 @@
+.cards .col {
+    padding-top: 2rem;
+    padding-top: calc(2 * var(--size-base, 1rem));
+}
+
+.cards .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    gap: calc(2 * var(--size-base, 1rem));
+}
+
+.cards-box {
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    gap: 1rem;
+    gap: calc(1 * var(--size-base, 1rem));
+
+    min-width: 800px;
+    flex: 3;
+}
+
+.cards-box__item {
+    aspect-ratio: 1/1;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    gap: calc(1 * var(--size-base, 1rem));
+
+    background-color: #02959b22;
+    background-color: var(--color-bg-opacity, #02959b22);
+
+    /* background-color: #e5feff;
+    background-color: var(--color-bg-light, #e5feff); */
+}
+
+.cards-box-item__icon {
+    width: 3rem;
+    height: 3rem;
+
+    fill: #02959b;
+    fill: var(--color-text-accent, #02959b);
+}
+
+.cards-box-item__title {
+    margin: 0;
+    margin-top: .5em;
+    font-weight: 600;
+}
+
+.cards-box-item__desc {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.workhours-box {
+    min-width: 400px;
+    flex: 2;
+
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
+    background-color:#02959b;
+    background-color: var(--color-bg-accent, #02959b);
+
+    padding: 3rem 3rem;
+    padding: calc(3 * var(--size-base, 1rem)) calc(3 * var(--size-base, 1rem));
+
+    box-shadow: 0 0 0 .8rem #02959b inset, 0 0 0 1rem #fff4 inset;
+    box-shadow: 0 0 0 .8rem var(--color-bg-accent, #02959b) inset, 0 0 0 1rem #fff4 inset;
+}
+
+.workhours-box__pretitle {
+    font-size: 160%;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.workhours-box__title {
+    font-size: 240%;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.workhours-box__desc {
+    font-size: 120%;
+    margin-bottom: 1em;
+}
+
+.workhours-box-daytime__item {
+    font-size: 120%;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .1em solid #fff4;
+}
+
+.workhours-box-daytime__day,
+.workhours-box-daytime__time {
+    margin: .5em 0;
+}
+
+.workhours-box__action {
+    margin-top: 2em;
+
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
+    background-color: #1c374c;
+    background-color: var(--color-bg-alt, #1c374c);
+}

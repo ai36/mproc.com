@@ -1,0 +1,85 @@
+:root {
+    --size-base: 1rem;
+    --size-max-width: 1400px;
+    --size-min-width: 375px;
+    --size-bradius: 100px;
+
+
+    --color-text: #222;
+    --color-text-alt: #f0f0f0;
+    --color-text-accent: #02959b;
+    --color-bg: #fff;
+    --color-bg-alt: #1c374c;
+    --color-bg-accent: #02959b;
+    --color-bg-opacity: #02959b18;
+    --color-bg-light: #e5feff;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font: normal normal 1rem/1.5 system-ui, sans-serif;
+}
+
+a,
+button,
+input,
+textarea {
+    color: inherit;
+    font: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: .5em 0;
+    text-wrap: balance;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 240%;
+    font-weight: 700;
+}
+
+button {
+    padding: .8em 3em;
+    border: none;
+    border-radius: 4px;
+    border-radius: var(--size-bradius, 4px);
+
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
+    background-color: #02959b;
+    background-color: var(--color-bg-accent, #02959b);
+    font-weight: 600;
+
+    text-transform: capitalize;
+}
+
+button:hover {
+    background-color: #1c374c;
+    background-color: var(--color-bg-alt, #1c374c);
+
+    cursor: pointer;
+}
