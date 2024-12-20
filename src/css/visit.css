@@ -1,0 +1,52 @@
+.visit .row {
+    background-image: url(/img/visit-orig.jpg);
+    background-size: cover;
+    background-position: right 100%;
+    background-repeat: no-repeat;
+    background-color: #02959b18;
+    background-color: var(--color-bg-opacity, #02959b18);
+}
+
+.visit .container {
+    min-height: 500px;
+}
+
+.visit__content {
+    width: 60%;
+    margin-right: auto;
+}
+
+.visit-content__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.visit-content-form__label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.visit-content-form__label sub {
+    color: red;
+    font-size: 130%;
+    padding: .2rem;
+}
+
+.visit-content-form__name,
+.visit-content-form__phone,
+.visit-content-form__email {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: .1em solid #bbb;
+    border-color: var(--color-text-lgrey, #bbb);
+    padding: .5rem;
+    padding: calc(.5 * var(--size-base, 1rem));
+}
+
+.visit-content-form__action {
+    margin-top: 2rem;
+    margin-top: calc(2 * var(--size-base, 1rem));
+}

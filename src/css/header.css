@@ -12,6 +12,7 @@
 
 .header-bar .container {
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .header-bar-phone__link,

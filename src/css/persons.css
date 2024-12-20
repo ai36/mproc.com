@@ -1,0 +1,36 @@
+.persons__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    gap: calc(2 * var(--size-base, 1rem));
+}
+
+.persons__item {
+    flex-basis: calc(50% - 2rem / 2);
+    max-width: calc(25% - 1.5rem);
+}
+
+@media screen and (width < 1000px) {
+    .persons__item {
+        max-width: unset;
+    }
+}
+
+.persons-item__photo {
+    width: 100%;
+    height: auto;
+}
+
+.persons-item__title {
+    font-size: 140%;
+}
+
+.persons-item__desc {
+    color: #777;
+    min-height: 3em;
+}
+
+.persons-item__action--small {
+    padding: .5rem 2rem;
+    margin-bottom: .5em;
+}

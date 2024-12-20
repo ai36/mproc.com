@@ -1,0 +1,37 @@
+.reviews .row {
+    background-image: url(/img/reviews.jpg);
+    background-size: contain;
+    background-position: calc(50% - 420px) 100%;
+    background-repeat: no-repeat;
+    background-color: #E5E3E8;
+    filter: brightness(1.08) saturate(.7);
+}
+
+.reviews .container {
+    min-height: 500px;
+}
+
+.reviews__content {
+    width: 42%;
+    margin-left: auto;
+}
+
+.reviews-content__title {
+    margin-bottom: .5em;
+}
+
+
+.reviews-content-box__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.reviews-content-box-item__photo {
+    margin: 1rem 0;
+}
+
+.reviews-content-box-item__name {
+    font-size: 120%;
+    font-weight: 600;
+}
