@@ -1,5 +1,5 @@
 .reviews .row {
-    background-image: url(/img/reviews.jpg);
+    background-image: url(../img/reviews.jpg);
     background-size: contain;
     background-position: calc(50% - 420px) 100%;
     background-repeat: no-repeat;
