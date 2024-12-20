@@ -1,5 +1,5 @@
 .present .row {
-    background-image: url(/img/present-halfwidth.jpg);
+    background-image: url(../img/present-halfwidth.jpg);
     background-size: contain;
     background-position: calc(50% - 400px) 100%;
     background-repeat: no-repeat;

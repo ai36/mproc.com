@@ -1,6 +1,6 @@
 .online {
-    background-image: conic-gradient(#02959b22, #02959b22), url(/img/online.jpg);
-    background-image: conic-gradient(var(--color-bg-opacity, #02959b22), var(--color-bg-opacity, #02959b22)), url(/img/online.jpg);
+    background-image: conic-gradient(#02959b22, #02959b22), url(../img/online.jpg);
+    background-image: conic-gradient(var(--color-bg-opacity, #02959b22), var(--color-bg-opacity, #02959b22)), url(../img/online.jpg);
 
     background-size: cover;
     background-position: center;

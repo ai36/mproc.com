@@ -1,0 +1,100 @@
+.footer--first .row {
+    background-color: #02959b;
+    background-color: var(--color-bg-accent, #02959b);
+    font-size: 110%;
+    line-height: 2;
+}
+
+.footer--first .container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 4rem 2rem;
+    padding: calc(4 * var(--size-base, 1rem)) calc(2 * var(--size-base, 1rem));
+}
+
+
+.footer-first-item__title {
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
+    margin: 0;
+    margin-bottom: 1.5em;
+}
+
+
+.footer--first .header-bar-phone__icon,
+.footer--first .header-bar-email__icon,
+.footer--first .header-bar-address__icon {
+    fill: #f0f0f0;
+    fill: var(--color-text-alt, #f0f0f0);
+}
+
+.footer--first .header-bar-phone__link:hover .header-bar-phone__icon,
+.footer--first .header-bar-email__link:hover .header-bar-email__icon,
+.footer--first .header-bar-address__link:hover .header-bar-address__icon {
+    fill: #bbb;
+    fill: var(--color-text-lgrey, #bbb);
+}
+
+.footer--first .header-bar-phone-link__text,
+.footer--first .header-bar-email-link__text,
+.footer--first .header-bar-address-link__text {
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
+}
+
+.footer--first .header-bar-phone__link:hover .header-bar-phone-link__text,
+.footer--first .header-bar-email__link:hover .header-bar-email-link__text,
+.footer--first .header-bar-address__link:hover .header-bar-address-link__text {
+    color: #bbb;
+    color: var(--color-text-lgrey, #bbb);
+}
+
+.footer--first .workhours-box__daytime {
+    font-size: 80%;
+}
+
+.footer--first .workhours-box-daytime__item {
+    border: none;
+    justify-content: flex-start;
+}
+
+.footer--first .workhours-box-daytime__day {
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer--first .workhours-box-daytime__day::after {
+    content: ':';
+    padding-right: .4rem;
+}
+
+.footer--first .workhours-box-daytime__time {
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
+    font-weight: normal;
+    margin: 0;
+}
+
+.workhours-box__daytime--footer {
+    margin-top: 1rem;
+}
+
+.footer--first .header-nav__menu {
+    flex-direction: column;
+    gap: 0;
+}
+
+.footer--first .nav-menu-item__link {
+    text-transform: unset;
+    font-weight: normal;
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
+}
+
+.footer--first .nav-menu-item__link:hover {
+    color: #bbb;
+    color: var(--color-text-lgrey, #bbb);
+}
