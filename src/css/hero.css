@@ -1,5 +1,5 @@
 .hero .row {
-    height: calc(100dvh - 230px);
+    height: calc(100dvh - 195px);
     background-image: conic-gradient(#0009, #0009), url(../img/hero-pic.jpg);
     background-size: cover;
     background-position: center;
@@ -28,8 +28,14 @@
 }
 
 .hero__title {
-    font-size: 500%;
+    font-size: 400%;
     line-height: 1;
+}
+
+@media screen and (width < 700px) {    
+.hero__title span {
+    display: none;
+}
 }
 
 .hero__desc {
