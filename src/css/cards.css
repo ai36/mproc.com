@@ -39,7 +39,7 @@
 
 .cards-box__item {
     aspect-ratio: 1/1.17;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,6 +52,12 @@
 
     padding: 20px;
     padding: calc(1 * var(--size-base, 20px));
+}
+
+@media screen and (width < 800px) {
+    .cards-box__item {
+        aspect-ratio: 1/1;
+    }
 }
 
 .cards-box-item__icon {
@@ -85,11 +91,11 @@
 
     color: #f0f0f0;
     color: var(--color-text-alt, #f0f0f0);
-    background-color:#02959b;
+    background-color: #02959b;
     background-color: var(--color-bg-accent, #02959b);
 
-    padding: 40px;
-    padding: calc(2 * var(--size-base, 20px)) calc(2 * var(--size-base, 20px));
+    padding: 60px;
+    padding: calc(3 * var(--size-base, 20px));
 
     box-shadow: 0 0 0 16px #02959b inset, 0 0 0 20px #fff4 inset;
     box-shadow: 0 0 0 calc(.8 * var(--size-base, 20px)) var(--color-bg-accent, #02959b) inset, 0 0 0 calc(1 * var(--size-base, 20px)) #fff4 inset;
@@ -117,7 +123,7 @@
 
 .workhours-box__desc {
     margin-bottom: 20px;
-    margin-bottom: calc(1 * var(--size-base, 20px));    
+    margin-bottom: calc(1 * var(--size-base, 20px));
 }
 
 .workhours-box-daytime__item {
@@ -135,6 +141,12 @@
     margin: 10px 0;
     margin: calc(.5 * var(--size-base, 20px)) 0;
     white-space: nowrap;
+}
+
+@media screen and ((1200px < width < 1400px) or (width < 500px)) {
+    .workhours-box-daytime__time span {
+        display: none;
+    }
 }
 
 .workhours-box__action {
