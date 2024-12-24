@@ -1,11 +1,12 @@
 :root {
-    --size-base: 1rem;
+    --size-base: 20px;
     --size-max-width: 1400px;
-    --size-min-width: 375px;
+    --size-min-width: 365px;
     --size-bradius: 100px;
 
+    --ttime: .2s;
 
-    --color-text: #222;
+    --color-text: #444;
     --color-text-alt: #f0f0f0;
     --color-text-accent: #02959b;
     --color-text-lgrey: #bbb;
@@ -25,6 +26,9 @@
 body {
     margin: 0;
     font: normal normal 1rem/1.5 system-ui, sans-serif;
+    font-size: clamp(1rem, 0.912rem + 0.386vw, 1.25rem);
+    color: #222;
+    color: var(--color-text, #222);
 }
 
 a,
@@ -38,6 +42,10 @@ textarea {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+b {
+    font-weight: normal;
 }
 
 ul,
@@ -63,8 +71,17 @@ h2 {
     font-weight: 700;
 }
 
+p {
+    text-wrap: balance; 
+}
+
+span {
+    text-wrap: balance; 
+}
+
 button {
-    padding: .8em 3em;
+    padding: 16px 60px;
+    padding: calc(.8 * var(--size-base, 20px)) calc(3 * var(--size-base, 20px));
     border: none;
     border-radius: 4px;
     border-radius: var(--size-bradius, 4px);

@@ -7,8 +7,9 @@
     background-color: var(--color-bg-opacity, #02959b18);
 }
 
-.visit .container {
-    min-height: 500px;
+.visit .col {
+    padding: 80px 0;
+    padding: calc(4 * var(--size-base, 20px)) 0;
 }
 
 .visit__content {
@@ -46,7 +47,8 @@
     padding: calc(.5 * var(--size-base, 1rem));
 }
 
-.visit-content-form__action {
-    margin-top: 2rem;
-    margin-top: calc(2 * var(--size-base, 1rem));
+.visit-content-form__desk {
+    margin: 40px 0;
+    margin-top: calc(2 * var(--size-base, 20px));
+    font-size: 85%;
 }

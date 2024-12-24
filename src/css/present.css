@@ -1,19 +1,58 @@
 .present .row {
     background-image: url(../img/present-halfwidth.jpg);
     background-size: contain;
-    background-position: calc(50% - 400px) 100%;
+    background-position: calc(50% - 600px) 100%;
     background-repeat: no-repeat;
 }
 
+@media screen and (width < 1600px) {
+    .present .row {
+        background-image: url(../img/present-quaterwidth.jpg);
+        background-position: 0 100%;
+    }    
+}
+
+@media screen and (width < 1300px) {
+    .present .row {
+        background-size: 50%;
+    }    
+}
+
+@media screen and (width < 1100px) {
+    .present .row {
+        background-image: url(../img/present-halfwidth.jpg);
+        background-position: 100% 100%;
+    }    
+}
+
+@media screen and (width < 700px) {
+    .present .row {
+        background-image: conic-gradient(#fffd, #fffd), url(../img/present-halfwidth.jpg);
+        background-position: center 100%;
+        background-size: cover;
+    }    
+}
+
 .present .col {
-    padding: 2rem 0;
-    padding: calc(2 * var(--size-base, 1rem)) 0;
+    padding: 80px 0;
+    padding: calc(4 * var(--size-base, 20px)) 0;
 }
 
 .present .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 500px;
+}
+
+@media screen and (width < 1100px) {
+    .present__content {
+        grid-area: 1/1/2/3;
+    }
+}
+
+@media screen and (700px < width < 1100px) {
+    .present-content__list ~ .present-content__desc {
+        max-width: 60%;
+    }  
 }
 
 .present-content__pretitle {
@@ -21,6 +60,17 @@
     font-weight: 600;
 }
 
+.present-content-list__item {
+    list-style: disc;
+    margin-left: 2em;
+}
+
+.present-content__desc--strong {
+    font-weight: 600;
+    display: none;
+}
+
 .present-content__action {
-    margin-top: 1rem;
+    margin-top: 20px;
+    margin-top: calc(1 * var(--size-base, 20px));
 }
