@@ -1,11 +1,17 @@
 .footer--second {
     background-color: #1c374c;
     background-color: var(--color-bg-alt, #1c374c);
-    color: #f0f0f0;
-    color: var(--color-text-alt, #f0f0f0);
+    color: #02959b;
+    color: var(--color-text-accent, #02959b);
 }
 
 .footer--second .container {
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+@media screen and (width < 600px) {
+    .footer-second__copy {
+        max-width: 190px;
+    }
 }
