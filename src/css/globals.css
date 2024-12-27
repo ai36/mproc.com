@@ -93,6 +93,7 @@ button {
     font-weight: 600;
 
     text-transform: capitalize;
+    white-space: nowrap;
 }
 
 button:hover {

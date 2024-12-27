@@ -21,15 +21,8 @@
 @media screen and (width < 1100px) {
     .present .row {
         background-image: url(../img/present-halfwidth.jpg);
-        background-position: 100% 100%;
-    }    
-}
-
-@media screen and (width < 700px) {
-    .present .row {
-        background-image: conic-gradient(#fffd, #fffd), url(../img/present-halfwidth.jpg);
+        background-size: contain;
         background-position: center 100%;
-        background-size: cover;
     }    
 }
 
@@ -44,15 +37,13 @@
 }
 
 @media screen and (width < 1100px) {
-    .present__content {
-        grid-area: 1/1/2/3;
+    .present .container {
+        grid-template: 1fr 50vw/1fr;
     }
-}
 
-@media screen and (700px < width < 1100px) {
-    .present-content__list ~ .present-content__desc {
-        max-width: 60%;
-    }  
+    .present__content {
+        grid-area: 1/1/2/2;
+    }
 }
 
 .present-content__pretitle {

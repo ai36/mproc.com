@@ -8,13 +8,20 @@
 
 @media screen and (width < 700px) {
     .online {
-        background-image: conic-gradient(#dbeceed0, #dbeceed0), url(../img/online.jpg);
+        background-size: contain;
+        background-position: center 100%;
     }
 }
 
 .online .col {
-    padding: 80px 0;
-    padding: calc(4 * var(--size-base, 20px)) 0;
+    padding: 40px 0;
+    padding: calc(2 * var(--size-base, 20px)) 0;
+}
+
+@media screen and (width < 700px) {
+    .online .col {
+        padding-bottom: 40vw;
+    }
 }
 
 .online__content {
