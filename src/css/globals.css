@@ -2,19 +2,23 @@
     --size-base: 20px;
     --size-max-width: 1400px;
     --size-min-width: 365px;
-    --size-bradius: 100px;
+    --size-bradius: 6px;
 
     --ttime: .2s;
 
     --color-text: #444;
     --color-text-alt: #f0f0f0;
     --color-text-accent: #02959b;
-    --color-text-lgrey: #bbb;
+    --color-text-lgrey: #D7E0E3;
     --color-bg: #fff;
-    --color-bg-alt: #1c374c;
+    --color-bg-alt: #013334;
     --color-bg-accent: #02959b;
     --color-bg-opacity: #02959b18;
     --color-bg-light: #e5feff;
+    --color-bg-lgreen: #d2f1d1;
+    --color-bg-green: #ADDAAD;
+    --color-bg-sky: #2AC4DF;
+    --color-bg-softgreen: #557777;
 }
 
 *,
@@ -25,8 +29,11 @@
 
 body {
     margin: 0;
-    font: normal normal 1rem/1.5 system-ui, sans-serif;
-    font-size: clamp(1rem, 0.912rem + 0.386vw, 1.25rem);
+    font: 600 normal 1rem/1.7 "Montserrat", system-ui, sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    font-size: clamp(0.875rem, 0.787rem + 0.386vw, 1.125rem);
+    letter-spacing: -.01em;
     color: #222;
     color: var(--color-text, #222);
 }
@@ -63,42 +70,74 @@ h5,
 h6 {
     margin: .5em 0;
     text-wrap: balance;
-    line-height: 1;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 440%;
+    font-weight: 300;
 }
 
 h2 {
-    font-size: 240%;
+    font-size: 280%;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 130%;
     font-weight: 700;
+    letter-spacing: 0;
 }
 
 p {
-    text-wrap: balance; 
+    text-wrap: pretty; 
 }
 
 span {
-    text-wrap: balance; 
+    text-wrap: pretty; 
 }
 
 button {
-    padding: 16px 60px;
-    padding: calc(.8 * var(--size-base, 20px)) calc(3 * var(--size-base, 20px));
-    border: none;
-    border-radius: 4px;
-    border-radius: var(--size-bradius, 4px);
+    padding: 16px 32px;
+    padding: calc(.8 * var(--size-base, 20px)) calc(1.6 * var(--size-base, 20px));
+    border: 2px solid currentColor;
+    border: calc(.1 * var(--size-base, 20px)) solid currentColor;
+    border-radius: 6px;
+    border-radius: var(--size-bradius, 6px);
 
     color: #f0f0f0;
     color: var(--color-text-alt, #f0f0f0);
-    background-color: #02959b;
-    background-color: var(--color-bg-accent, #02959b);
+    fill: currentColor;
+    background-color: transparent;
     font-weight: 600;
-
-    text-transform: capitalize;
     white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+    gap: .8em;
+
+    transition: .2s;
+    transition: var(--ttime, .2s);
 }
 
 button:hover {
-    background-color: #1c374c;
-    background-color: var(--color-bg-alt, #1c374c);
+    background-color: #fff;
+    background-color: var(--color-bg, #fff);
+    color: #444;
+    color: var(--color-text, #444);
 
     cursor: pointer;
+}
+
+button > svg {
+    width: 1.5em;
+}
+
+button:has(svg) {
+    padding-right: 24px;
+    padding-right: calc(1.2 * var(--size-base, 20px));
+}
+
+img {
+    display: block;
 }

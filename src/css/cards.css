@@ -1,6 +1,6 @@
 .cards .col {
-    padding-top: 40px;
-    padding-top: calc(2 * var(--size-base, 20px));
+    padding: 40px 0;
+    padding: calc(2 * var(--size-base, 20px)) 0;
 }
 
 .cards .container {
@@ -9,36 +9,26 @@
     flex-wrap: wrap;
     gap: 40px;
     gap: calc(2 * var(--size-base, 20px));
-    min-height: 640px;
 }
 
 .cards-box {
     display: grid;
-    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    grid-template: repeat(1, 1fr)/repeat(3, 1fr);
     gap: 20px;
     gap: calc(1 * var(--size-base, 20px));
 
-    min-width: 800px;
     flex: 3;
 }
 
-@media screen and (width < 800px) {
+@media screen and (width < 1200px) {
     .cards-box {
-        min-width: 100%;
-        grid-template: repeat(3, 1fr)/repeat(2, 1fr);
-    }
-}
-
-@media screen and (width < 500px) {
-    .cards-box {
-        min-width: unset;
-        max-width: 360px;
-        grid-template: repeat(6, 1fr)/1fr;
+        max-width: 480px;
+        grid-template: repeat(3, 1fr)/repeat(1, 1fr);
     }
 }
 
 .cards-box__item {
-    aspect-ratio: 1/1.17;
+    aspect-ratio: 1/1;
 
     display: flex;
     flex-direction: column;
@@ -47,11 +37,30 @@
     gap: 20px;
     gap: calc(1 * var(--size-base, 20px));
 
-    background-color: #02959b18;
-    background-color: var(--color-bg-opacity, #02959b18);
+    color: #013334;
+    color: var(--color-bg-alt, #013334);
+    fill: currentColor;
 
     padding: 20px;
     padding: calc(1 * var(--size-base, 20px));
+
+    border-radius: 20px;
+    border-radius: calc(1 * var(--size-base, 20px));
+}
+
+.cards-box__item:nth-child(1) {
+    background-color: #ADDAAD;
+    background-color: var(--color-bg-green, #ADDAAD);
+}
+
+.cards-box__item:nth-child(2) {
+    background-color: #2AC4DF;
+    background-color: var(--color-bg-sky, #2AC4DF);
+}
+
+.cards-box__item:nth-child(3) {
+    background-color: #D7E0E3;
+    background-color: var(--color-bg-lgray, #D7E0E3);
 }
 
 @media screen and (width < 800px) {
@@ -63,29 +72,24 @@
 .cards-box-item__icon {
     width: 60px;
     height: 60px;
-
-    fill: #02959b;
-    fill: var(--color-text-accent, #02959b);
 }
 
 .cards-box-item__title {
     margin: 0;
     margin-top: 10px;
     margin-top: calc(.5 * var(--size-base, 20px));
-    font-weight: 600;
 }
 
 .cards-box-item__desc {
     margin: 0;
     padding: 0;
-    font-size: 90%;
     text-align: center;
     min-height: 4.5em;
 }
 
 
 
-.workhours-box {
+/* .workhours-box {
     min-width: 400px;
     flex: 2;
 
@@ -157,4 +161,4 @@
     color: var(--color-text-alt, #f0f0f0);
     background-color: #1c374c;
     background-color: var(--color-bg-alt, #1c374c);
-}
+} */
