@@ -20,3 +20,21 @@
     gap: 20px;
     gap: calc(1 * var(--size-base, 20px));
 }
+
+.button--alt {
+    padding: 16px 32px;
+    padding: calc(.8 * var(--size-base, 20px)) calc(1.6 * var(--size-base, 20px));
+    border: none;
+    color: inherit;
+    margin: 0 auto;
+    font-weight: 800;
+}
+
+.button--alt:hover {
+    gap: .2rem;
+    background-color: transparent;
+}
+
+.button--reverse:has(svg) > svg {
+    order: -1;
+}
