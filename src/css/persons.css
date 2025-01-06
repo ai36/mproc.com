@@ -1,6 +1,6 @@
 .persons .col {
-    padding: 40px 0;
-    padding: calc(2 * var(--size-base, 20px)) 0;
+    padding: 40px 0 60px 0;
+    padding: calc(2 * var(--size-base, 20px)) 0 calc(3 * var(--size-base, 20px)) 0;
 }
 
 @media screen and (width < 700px) {

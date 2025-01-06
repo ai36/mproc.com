@@ -23,7 +23,6 @@
     transform: translate(-50%, -50%);
     width: 100%;
     height: auto;
-    filter: brightness(.3);
 }
 
 @media screen and (width < 1141px) {
@@ -36,6 +35,8 @@
 .hero .col {
     display: grid;
     place-content: center start;
+    background-image: conic-gradient(#013334c0, #013334c0);
+    box-shadow: 0 0 0 100vw #013334c0;
 }
 
 .hero .container {

@@ -1,6 +1,6 @@
 .footer--second {
-    background-color: #1c374c;
-    background-color: var(--color-bg-alt, #1c374c);
+    background-color: #0a1113;
+    background-color: var(--color-bg-dark, #0a1113);
     color: #02959b;
     color: var(--color-text-accent, #02959b);
 }

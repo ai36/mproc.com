@@ -1,6 +1,6 @@
 .footer--first .row {
-    background-color: #02959b;
-    background-color: var(--color-bg-accent, #02959b);
+    background-color: #013334;
+    background-color: var(--color-bg-alt, #013334);
     font-size: 110%;
 }
 
@@ -12,7 +12,7 @@
     padding: calc(4 * var(--size-base, 20px)) calc(2 * var(--size-base, 20px));
 }
 
-@media screen and (width < 900px) {
+@media screen and (width < 1000px) {
     .footer--first .container {
         flex-wrap: wrap;
         row-gap: 40px;
@@ -28,12 +28,15 @@
     }
 }
 
-@media screen and (width < 900px) {
+@media screen and (width < 1000px) {
     .footer-first__item:first-child {
         flex-basis: 100%;
         border-bottom: 2px solid #fff4;
         padding-bottom: 40px;
         text-align: center;
+
+        display: flex;
+        justify-content: center;
     }
 }
 
