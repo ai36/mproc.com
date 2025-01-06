@@ -60,6 +60,13 @@
     margin-bottom: 10px;
     margin-bottom: calc(.5 * var(--size-base, 20px));
     min-width: 182px;
+    color: #013334;
+    color: var(--color-bg-alt, #013334);
+}
+
+.persons-item__action--small:hover {
+    background-color: #D7E0E3;
+    background-color: var(--color-text-lgrey, #D7E0E3);
 }
 
 .persons-item__photo--join-us {
@@ -69,7 +76,7 @@
     display: grid;
     place-content: center;
 
-    border: 4px dashed #02959b;
+    border: 3px dashed #02959b;
     /* width: calc(100% - 40px);
     width: calc(100% - 2 * var(--size-base, 20px));
     margin: 20px;

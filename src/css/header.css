@@ -78,6 +78,24 @@
     }
 }
 
+@media screen and (800px < width < 1000px) {
+    .header-nav__logo {
+        width: 55px;
+        overflow: hidden;
+    }
+}
+
+.header-nav__logo img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (width < 1300px) {
+    .header-nav__logo img {
+        width: 200px;
+    }
+}
+
 .header-nav__menu {
     display: flex;
     gap: 20px;
@@ -101,16 +119,87 @@
     }    
 }
 
+.nav-menu__item {
+    position: relative;
+}
+
 .nav-menu-item__link {
     text-transform: capitalize;
     font-weight: 600;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .nav-menu-item__link:hover {
     color: #02959b;
     color: var(--color-text-accent, #02959b);
 }
+
+
+.header-nav__submenu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #d2f1d1;
+    background-color: var(--color-bg-lgreen, #d2f1d1);
+
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    gap: calc(.5 * var(--size-base, 20px));
+
+    padding: 20px 40px;
+    padding: calc(1 * var(--size-base, 20px)) calc(2 * var(--size-base, 20px));
+}
+
+.header-nav__submenu.active {
+    display: flex;
+}
+
+@media screen and (width < 800px) {
+    .header-nav__menu.active {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 40px;
+        padding: calc(2 * var(--size-base, 20px));
+        text-align: center;
+    }
+
+    .header-nav__menu.active .nav-menu__item {
+        flex: 1;
+        align-self: flex-start;
+    }
+
+    .header-nav__menu.active .nav-menu-item__link {
+        cursor: default;
+        font-weight: 800;
+    }
+
+    .header-nav__menu.active .nav-menu-item__link + .header-nav__submenu {
+        display: flex;
+        position: unset;
+        transform: unset;
+        background-color: unset;
+        padding-left: unset;
+        padding-right: unset;
+    }
+}
+
+.nav-submenu-item__link {
+    text-transform: capitalize;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.nav-submenu-item__link:hover {
+    color: #02959b;
+    color: var(--color-text-accent, #02959b);
+}
+
 
 .nav-menu-burger__open,
 .nav-menu-burger__close {
@@ -121,6 +210,11 @@
     display: none;
     align-items: center;
     justify-content: center;
+
+    fill:#013334;
+    fill: var(--color-bg-alt, #013334);
+
+    cursor: pointer;
 }
 
 @media screen and (width < 800px) {

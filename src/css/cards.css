@@ -12,12 +12,11 @@
 }
 
 .cards-box {
+    max-width: 960px;
     display: grid;
-    grid-template: repeat(1, 1fr)/repeat(3, 1fr);
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
     gap: 20px;
     gap: calc(1 * var(--size-base, 20px));
-
-    flex: 3;
 }
 
 @media screen and (width < 1200px) {
@@ -28,12 +27,9 @@
 }
 
 .cards-box__item {
-    aspect-ratio: 1/1;
-
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     gap: 20px;
     gap: calc(1 * var(--size-base, 20px));
 
@@ -41,8 +37,8 @@
     color: var(--color-bg-alt, #013334);
     fill: currentColor;
 
-    padding: 20px;
-    padding: calc(1 * var(--size-base, 20px));
+    padding: 40px;
+    padding: calc(2 * var(--size-base, 20px));
 
     border-radius: 20px;
     border-radius: calc(1 * var(--size-base, 20px));
@@ -61,6 +57,21 @@
 .cards-box__item:nth-child(3) {
     background-color: #D7E0E3;
     background-color: var(--color-bg-lgray, #D7E0E3);
+}
+
+.cards-box__item:nth-child(4) {
+    background-color: #d2f1d1;
+    background-color: var(--color-bg-lgreen, #d2f1d1);
+}
+
+.cards-box__item:nth-child(5) {
+    background-color: #f0f0f0;
+    background-color: var(--color-text-alt, #f0f0f0);
+}
+
+.cards-box__item:nth-child(6) {
+    background-color: #ADDAAD;
+    background-color: var(--color-bg-green, #ADDAAD);
 }
 
 @media screen and (width < 800px) {
@@ -83,8 +94,9 @@
 .cards-box-item__desc {
     margin: 0;
     padding: 0;
-    text-align: center;
     min-height: 4.5em;
+
+    margin-bottom: auto;
 }
 
 
