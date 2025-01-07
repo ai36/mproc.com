@@ -15,6 +15,18 @@
     }
 }
 
+@media screen and (width < 700px) {
+    .hero .row {
+        font-size: 90%;
+    }
+}
+
+@media screen and (width < 500px) {
+    .hero .row {
+        font-size: 80%;
+    }
+}
+
 .hero__background-video {
     position: absolute;
     z-index: -1;

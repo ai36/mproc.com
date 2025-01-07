@@ -140,7 +140,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 100;
+    z-index: 1000;
 
     box-shadow: 0 0 1px #557777;
     box-shadow: 0 0 1px var(--color-bg-softgreen, #557777);
@@ -172,6 +172,7 @@
         padding: 40px;
         padding: calc(2 * var(--size-base, 20px));
         text-align: center;
+        z-index: 1000;
     }
 
     .header-nav__menu.active .nav-menu__item {
@@ -191,6 +192,7 @@
         background-color: unset;
         padding-left: unset;
         padding-right: unset;
+        box-shadow: unset;
     }
 }
 
@@ -234,7 +236,7 @@
         top: calc(1 * var(--size-base, 20px));
         right: 20px;
         right: calc(1 * var(--size-base, 20px));
-        z-index: 100;
+        z-index: 1000;
     }
 }
 
