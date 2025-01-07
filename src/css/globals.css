@@ -19,6 +19,7 @@
     --color-bg-green: #ADDAAD;
     --color-bg-sky: #2AC4DF;
     --color-bg-softgreen: #557777;
+    --color-bg-dark: #0a1113;
 }
 
 *,
@@ -32,7 +33,7 @@ body {
     font: 600 normal 1rem/1.7 "Montserrat", system-ui, sans-serif;
     font-optical-sizing: auto;
     font-size: 1rem;
-    font-size: clamp(0.875rem, 0.787rem + 0.386vw, 1.125rem);
+    font-size: clamp(0.875rem, 0.25rem + 1vw, 1.125rem);
     letter-spacing: -.01em;
     color: #222;
     color: var(--color-text, #222);
@@ -70,7 +71,7 @@ h5,
 h6 {
     margin: .5em 0;
     text-wrap: balance;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 h1 {

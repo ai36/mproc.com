@@ -1,16 +1,24 @@
 .reviews .row {
-    background-image: url(../img/reviews.jpg);
-    background-size: contain;
-    background-position: calc(50% - 500px) 100%;
-    background-repeat: no-repeat;
-    background-color: #E5E3E8;
-    /* filter: brightness(1.08) saturate(.7); */
+    position: relative;
+    overflow: hidden;
 }
 
-@media screen and (width < 1200px) {
-    .reviews .row {
-        background-position: calc(50% - 45vw) 100%;
-        background-size: cover;
+
+.reviews__background-video {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    filter: brightness(.6);
+}
+
+@media screen and (width < 1280px) {
+    .reviews__background-video {
+        width: auto;
+        height: 100%;
     }
 }
 
@@ -32,16 +40,19 @@
 .reviews__content {
     width: 42%;
     margin-left: auto;
+    padding: 30px;
+    padding: calc(1.5 * var(--size-base, 20px));
+    padding-top: 10px;
+    padding-top: calc(.5 * var(--size-base, 20px));
+    background-color: #fffa;
+
+    border-radius: 20px;
+    border-radius: calc(1 * var(--size-base, 20px));
 }
 
-@media screen and (width < 800px) {
+@media screen and (width < 1200px) {
     .reviews__content {
         width: 400px;
-        padding: 30px;
-        padding: calc(1.5 * var(--size-base, 20px));
-        padding-top: 10px;
-        padding-top: calc(.5 * var(--size-base, 20px));
-        background-color: #fffd;
     }
 }
 
@@ -60,6 +71,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.reviews-content-box-item__desc {
+    overflow: auto;
+    line-height: 1.5;
+    max-height: calc(1.5em * 8);
 }
 
 .reviews-content-box-item__photo {
