@@ -1,10 +1,10 @@
 .hero .row {
-    /* height: calc(100dvh - 177px);
+    /* height: calc(100dvh - 155px);
     background-image: conic-gradient(#013334e0, #013334e0), url(../img/hero-pic.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
-    min-height: calc(100dvh - 177px);
+    min-height: calc(100dvh - 155px);
     position: relative;
     overflow: hidden;
 }
@@ -58,7 +58,7 @@
     display: flex;
     align-items: flex-start;
     gap: unset;
-    height: calc(100dvh - 177px);
+    height: calc(100dvh - 155px);
 }
 
 @media screen and (width < 1300px) {
@@ -69,7 +69,12 @@
 
 .hero__pretitle {
     font-size: 140%;
+    font-weight: 400;
     text-transform: capitalize;
+}
+
+.hero__pretitle b {
+    font-weight: 600;
 }
 
 @media screen and (width < 700px) {
