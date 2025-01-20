@@ -1,16 +1,15 @@
 .header-bar {
-    fill: #1c374c;
-    fill: var(--color-bg-alt, #1c374c);
-    color: #1c374c;
-    color: var(--color-bg-alt, #1c374c);
+    fill: #D7E0E3;
+    fill: var(--color-text-lgrey, #D7E0E3);
+    color: #D7E0E3;
+    color: var(--color-text-lgrey, #D7E0E3);
     font-size: 90%;
 }
 
 .header-bar .row {
-    /* background-color: #f0f0f0;
-    background-color: var(--color-text-alt, #f0f0f0); */
-    background-color: #d2f1d1;
-    background-color: var(--color-bg-lgreen, #d2f1d1);
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
 }
 
 .header-bar .container {
@@ -69,10 +68,8 @@
 } */
 
 .header-nav .row {
-    /* background-color: #d2f1d1;
-    background-color: var(--color-bg-lgreen, #d2f1d1); */
-    background-color: #02959b;
-    background-color: var(--color-bg-accent, #02959b);
+    background-color: #013334;
+    background-color: var(--color-bg-alt, #013334);
     color: #f0f0f0;
     color: var(--color-text-alt, #f0f0f0);
 }
@@ -82,18 +79,13 @@
     padding: calc(1 * var(--size-base, 20px));
     display: flex;
     flex-direction: row;
+
+    height: 92px;
 }
 
 .header-nav__logo {
-    width: 380px;
+    width: 275px;
     margin-right: auto;
-}
-
-@media screen and (800px < width < 900px) {
-    .header-nav__logo {
-        width: 280px;
-        margin-right: auto;
-    }
 }
 
 @media screen and (width < 800px) {
@@ -102,24 +94,11 @@
     }
 }
 
-/* @media screen and (width < 500px) {
-    .header-nav__logo {
-        overflow: hidden;
-        width: 55px;
-    }
-} */
-
 .header-nav__logo img {
     width: 100%;
     height: auto;
 }
 
-/* @media screen and (width < 500px) {
-    .header-nav__logo img{
-        width: auto;
-        height: 35px;
-    }
-} */
 
 .header-nav__menu {
     display: flex;
@@ -140,7 +119,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #fff;
+        background-color: #013334;
+        background-color: var(--color-bg-alt, #013334);
     }
 }
 
@@ -156,8 +136,8 @@
 }
 
 .nav-menu-item__link:hover {
-    color: #013334;
-    color: var(--color-bg-alt, #013334);
+    color: #02959b;
+    color: var(--color-text-accent, #02959b);
 }
 
 
@@ -167,14 +147,13 @@
     transform: translateX(-50%);
     z-index: 1000;
 
-    box-shadow: 0 0 1px #013334;
-    box-shadow: 0 0 1px var(--color-bg-alt, #013334);
+    box-shadow: 0 0 1px #D7E0E3;
+    box-shadow: 0 0 1px var(--color-text-lgrey, #D7E0E3);
     border-radius: 6px;
     border-radius: var(--size-bradius, 6px);
 
-
-    background-color: #02959b;
-    background-color: var(--color-text-accent, #02959b);
+    background-color: #013334;
+    background-color: var(--color-bg-alt, #013334);
 
     display: none;
     flex-direction: column;
@@ -200,8 +179,8 @@
         text-align: center;
         z-index: 1000;
 
-        color: #013334;
-        color: var(--color-bg-alt, #013334);
+        color: #f0f0f0;
+        color: var(--color-text-alt, #f0f0f0);
     }
 
     .header-nav__menu.active .nav-menu__item {
@@ -212,6 +191,9 @@
     .header-nav__menu.active .nav-menu-item__link {
         cursor: default;
         font-weight: 800;
+                
+        color: #02959b;
+        color: var(--color-text-accent, #02959b);
     }
 
     .header-nav__menu.active .nav-menu-item__link+.header-nav__submenu {
@@ -233,8 +215,8 @@
 }
 
 .nav-submenu-item__link:hover {
-    color: #013334;
-    color: var(--color-bg-alt, #013334);
+    color: #02959b;
+    color: var(--color-text-accent, #02959b);
 }
 
 @media screen and (width < 800px) {
@@ -272,8 +254,8 @@
         right: calc(1 * var(--size-base, 20px));
         z-index: 1000;
 
-        fill: #013334;
-        fill: var(--color-bg-alt, #013334);
+        fill: #f0f0f0;
+        fill: var(--color-text-alt, #f0f0f0);
     }
 
     .header-nav__menu.active~.nav-menu-burger__close:hover {
@@ -284,8 +266,8 @@
 
 .nav-menu-burger__open:hover,
 .nav-menu-burger__close:hover {
-    fill: #013334;
-    fill: var(--color-bg-alt, #013334);
+    fill: #02959b;
+    fill: var(--color-text-accent, #02959b);
     background: unset;
 }
 

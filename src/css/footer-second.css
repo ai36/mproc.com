@@ -1,8 +1,8 @@
 .footer--second {
     background-color: #0a1113;
     background-color: var(--color-bg-dark, #0a1113);
-    color: #02959b;
-    color: var(--color-text-accent, #02959b);
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
 }
 
 .footer--second .container {
@@ -14,4 +14,9 @@
     .footer-second__copy {
         max-width: 190px;
     }
+}
+
+.footer-second__privacy:hover {
+    color: #02959b;
+    color: var(--color-text-accent, #02959b);
 }
