@@ -3,13 +3,6 @@
     padding: calc(2 * var(--size-base, 20px)) 0 calc(3 * var(--size-base, 20px)) 0;
 }
 
-@media screen and (width < 700px) {
-    .persons .col {
-        padding-top: 0;
-    }    
-}
-
-
 @media screen and (width < 500px) {
     .persons__title {
         text-align: center;
@@ -21,27 +14,30 @@
 }
 
 .persons__box {
+    max-width: 960px;
     display: grid;
-    grid-template: 1fr min-content/repeat(2, 1fr);
-    gap: 40px;
-    gap: calc(2 * var(--size-base, 20px));
+    grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+    gap: 20px;
+    gap: calc(1 * var(--size-base, 20px));
+
+    padding: 40px;
+    padding: calc(2 * var(--size-base, 20px));
 }
 
-/* .persons__item {
-    flex-basis: calc(50% - 40px / 2);
-    max-width: calc(25% - 30px);
-} */
-
-/* @media screen and (width < 1000px) {
-    .persons__item {
-        max-width: unset;
+@media screen and (width < 1200px) {
+    .persons__box {
+        max-width: 480px;
+        grid-template: repeat(2, 1fr)/repeat(1, 1fr);
     }
-} */
+}
 
 .persons-item__photo {
     width: 100%;
     height: auto;
     display: block;
+    
+    border-radius: 20px;
+    border-radius: calc(1 * var(--size-base, 20px));
 }
 
 .persons-item__title {
@@ -53,9 +49,7 @@
     min-height: 3em;
 }
 
-.persons-item__action--small {
-    padding: 10px 40px;
-    padding: calc(.5 * var(--size-base, 20px)) calc(2 * var(--size-base, 20px));
+.persons-item__action--bg-white {
     min-width: 182px;
     color: #013334;
     color: var(--color-bg-alt, #013334);
@@ -67,34 +61,7 @@
     margin-bottom: calc(.5 * var(--size-base, 20px));
 }
 
-.persons-item__action--small:hover {
+.persons-item__action--bg-white:hover {
     background-color: #D7E0E3;
     background-color: var(--color-text-lgrey, #D7E0E3);
 }
-
-.persons-item__photo--join-us {
-    background-color: #e5feff;
-    background-color: var(--color-bg-light, #e5feff);
-    aspect-ratio: 1/1;
-    display: grid;
-    place-content: center;
-
-    border: 3px dashed #02959b;
-    /* width: calc(100% - 40px);
-    width: calc(100% - 2 * var(--size-base, 20px));
-    margin: 20px;
-    margin: calc(1 * var(--size-base, 20px));
-    box-shadow: 0 0 0 20px #e5feff;
-    box-shadow: 0 0 0 calc(1 * var(--size-base, 20px)) var(--color-bg-light, #e5feff); */
-}
-
-.persons-item__photo--join-us svg {
-    width: 60px;
-    height: 60px;
-    fill: #02959b;
-    fill: var(--color-text-accent, #02959b);
-}
-
-/* .persons-item__title--join-us {
-    padding-top: calc(.75 * var(--size-base, 20px));
-} */

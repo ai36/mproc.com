@@ -1,7 +1,4 @@
 .cards .row {
-    /* padding-bottom: 40px;
-    padding-bottom: calc(2 * var(--size-base, 20px)); */
-
     padding: 60px 0;
     padding: calc(3 * var(--size-base, 20px)) 0;
 }
@@ -42,8 +39,8 @@
     gap: 20px;
     gap: calc(1 * var(--size-base, 20px));
 
-    color: #013334;
-    color: var(--color-bg-alt, #013334);
+    color: #fff;
+    color: var(--color-text-alt, #fff);
     fill: currentColor;
 
     padding: 40px;
@@ -57,53 +54,32 @@
     overflow: hidden;
 }
 
+@media screen and (width < 500px) {
+.cards-box__item {
+    font-size: 86%;
+}
+}
 .cards-box__item:nth-child(1) {
-    /* background-color: #ADDAAD;
-    background-color: var(--color-bg-green, #ADDAAD); */
     color: #fff;
     color: var(--color-text-alt, #fff);
     background-image: linear-gradient(#0000 40%, #0008);
 }
 
 .cards-box__item:nth-child(2) {
-    background-color: #ADDAAD;
-    background-color: var(--color-bg-green, #ADDAAD);
+    background-color: #013334;
+    background-color: var(--color-bg-alt, #013334);
 }
 
 .cards-box__item:nth-child(3) {
-    background-color: #d2f1d1;
-    background-color: var(--color-bg-lgreen, #d2f1d1);
+    background-color: #013334;
+    background-color: var(--color-bg-alt, #013334);
 }
 
 .cards-box__item:nth-child(4) {
-    /* background-color: #d2f1d1;
-    background-color: var(--color-bg-lgreen, #d2f1d1); */
     color: #fff;
     color: var(--color-text-alt, #fff);
-    background-image: linear-gradient(#0000 40%, #0008);
+    background-image: linear-gradient(#0000 30%, #0009);
 }
-
-.cards-box__item:nth-child(5) {
-    background-color: #f0f0f0;
-    background-color: var(--color-text-alt, #f0f0f0);
-}
-
-.cards-box__item:nth-child(6) {
-    background-color: #ADDAAD;
-    background-color: var(--color-bg-green, #ADDAAD);
-}
-
-/* .cards-box-item__icon {
-    width: 60px;
-    height: 60px;
-}
-
-.cards-box-item__title {
-    margin: 0;
-    margin-top: 10px;
-    margin-top: calc(.5 * var(--size-base, 20px));
-} */
-
 
 .cards-box-item__pic {
     width: auto;
@@ -119,86 +95,15 @@
 .cards-box-item__desc {
     margin: 0;
     padding: 0;
-
 }
+
+.cards-box-item__desc span {
+    font-size: 110%;
+    font-weight: 800;
+}
+
 
 .cards-box__item:has(.cards-box-item__pic) {
     text-shadow: 0 0 5px #0008;
     justify-content: flex-end;
 }
-
-
-
-/* .workhours-box {
-    min-width: 400px;
-    flex: 2;
-
-    color: #f0f0f0;
-    color: var(--color-text-alt, #f0f0f0);
-    background-color: #02959b;
-    background-color: var(--color-bg-accent, #02959b);
-
-    padding: 60px;
-    padding: calc(3 * var(--size-base, 20px));
-
-    box-shadow: 0 0 0 16px #02959b inset, 0 0 0 20px #fff4 inset;
-    box-shadow: 0 0 0 calc(.8 * var(--size-base, 20px)) var(--color-bg-accent, #02959b) inset, 0 0 0 calc(1 * var(--size-base, 20px)) #fff4 inset;
-
-    max-width: 800px;
-}
-
-@media screen and (width < 500px) {
-    .workhours-box {
-        min-width: unset;
-    }
-}
-
-.workhours-box__pretitle {
-    font-size: 160%;
-    font-weight: 600;
-    line-height: 1;
-}
-
-.workhours-box__title {
-    font-size: 220%;
-    font-weight: 700;
-    line-height: 1;
-}
-
-.workhours-box__desc {
-    margin-bottom: 20px;
-    margin-bottom: calc(1 * var(--size-base, 20px));
-}
-
-.workhours-box-daytime__item {
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    gap: calc(.5 * var(--size-base, 20px));
-    border-bottom: 2px solid #fff4;
-    border-bottom: calc(.1 * var(--size-base, 20px)) solid #fff4;
-}
-
-.workhours-box-daytime__day,
-.workhours-box-daytime__time {
-    margin: 10px 0;
-    margin: calc(.5 * var(--size-base, 20px)) 0;
-    white-space: nowrap;
-}
-
-@media screen and ((1200px < width < 1400px) or (width < 500px)) {
-    .workhours-box-daytime__time span {
-        display: none;
-    }
-}
-
-.workhours-box__action {
-    margin-top: 40px;
-    margin-top: calc(2 * var(--size-base, 20px));
-
-    color: #f0f0f0;
-    color: var(--color-text-alt, #f0f0f0);
-    background-color: #1c374c;
-    background-color: var(--color-bg-alt, #1c374c);
-} */
