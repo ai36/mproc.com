@@ -38,3 +38,8 @@
 .button--reverse:has(svg) > svg {
     order: -1;
 }
+
+#errorMessage {
+    color: red;
+    margin-top: 10px;    
+}
