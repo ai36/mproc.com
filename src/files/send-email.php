@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    $to = '4363626@gmail.com'; // Целевой email
+    $to = 'office@mproc.com'; // Целевой email
     $subject = "[Mproc.com] Message from $name";
     $body = "Name: $name\nEmail: $email\nPhone: $phone\nReferring physician: $referringPhysician";
 
