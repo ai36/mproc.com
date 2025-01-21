@@ -6,7 +6,6 @@ const headerNavMenu = document.querySelector(".header-nav__menu")
 navMenuBurgerOpen.addEventListener('click', () => { headerNavMenu.classList.add("active") })
 navMenuBurgerClose.addEventListener('click', () => { headerNavMenu.classList.remove("active") })
 
-
 // Site submenu
 // Функция для расчета и корректировки позиции подменю
 function adjustSubmenuPosition(submenu) {
@@ -63,6 +62,7 @@ document.addEventListener('click', (event) => {
         }
     }
 });
+
 
 
 

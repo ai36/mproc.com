@@ -184,24 +184,24 @@
                                 <form action="" class="visit-content__form" id="contactForm">
                                     <label class="visit-content-form__label">
                                         <span>Patient Name<sub>*<sub></span>
-                                        <input class="visit-content-form__name" type="text" id="name" name="name" required>
+                                        <input class="visit-content-form__name" type="text" id="name" name="name" required placeholder="E.g. John Doe">
                                     </label>
                                     <label class="visit-content-form__label">
                                         <span>Phone<sub>*<sub></span>
-                                        <input class="visit-content-form__phone" type="phone" id="phone" name="phone" required pattern="[0-9]{10,15}" placeholder="For example - 1234567890">
+                                        <input class="visit-content-form__phone" type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Only digits, e.g. 5031234567">
                                     </label>
                                     <label class="visit-content-form__label">
                                         <span>Email<sub>*<sub></span>
-                                        <input class="visit-content-form__email" type="email" id="email" name="email" required>
+                                        <input class="visit-content-form__email" type="email" id="email" name="email" required placeholder="E.g. email@post.com">
                                     </label>
                                     <label class="visit-content-form__label">
                                         <span>Referring physician<sub>*<sub></span>
-                                        <input class="visit-content-form__referring-physician" type="text" id="referringPhysician" name="referringPhysician" required>
+                                        <input class="visit-content-form__referring-physician" type="text" id="referringPhysician" name="referringPhysician" required placeholder="E.g. Alex Smith MD">
                                     </label>
                                     <p class="visit-content-form__desk">Your information is protected by HIPAA privacy regulations and used only for appointment scheduling. Our care coordinators will contact you within one business day to schedule your consultation.</p>
                                     <button class="visit-content-form__action" type="submit">Request an Appointment</button>
 
-                                    <div id="response"></div>
+                                    <div id="errorMessage"></div>
                                 </form>
                             </div>
                         </div>
