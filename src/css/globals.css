@@ -142,3 +142,8 @@ button:has(svg) {
 img {
     display: block;
 }
+
+input::placeholder {
+    font-weight: 400;
+    font-style: italic;
+}

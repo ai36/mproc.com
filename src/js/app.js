@@ -63,3 +63,35 @@ document.addEventListener('click', (event) => {
         }
     }
 });
+
+
+
+
+// Обработчик отправки формы
+document.getElementById('contactForm').addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    const errorMessageDiv = document.getElementById('errorMessage');
+    errorMessageDiv.textContent = ''; // Очистить предыдущие ошибки
+
+    try {
+        const response = await fetch('send-email.php', {
+            method: 'POST',
+            body: formData,
+        });
+
+        if (response.ok) {
+            const result = await response.json();
+            if (result.success) {
+                window.location.href = 'thank-you.html';
+            } else {
+                errorMessageDiv.textContent = result.message || 'An error has occurred. Please try again later';
+            }
+        } else {
+            errorMessageDiv.textContent = 'Server error. Try again later';
+        }
+    } catch (error) {
+        errorMessageDiv.textContent = 'A network error has occurred. Please check your internet connection';
+    }
+});
