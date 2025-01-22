@@ -96,3 +96,13 @@ document.getElementById('contactForm').addEventListener('submit', async (event) 
     }
 });
 
+
+
+
+
+/* copyright year */
+document.addEventListener('DOMContentLoaded', () => {
+    const copyYear = document.getElementById("footer-second-copy__year");
+    copyYear.textContent = `${new Date().getFullYear()}`;
+}, { once: true });
+

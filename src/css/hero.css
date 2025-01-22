@@ -1,5 +1,5 @@
 .hero .row {
-    min-height: calc(100dvh - 92px);
+    min-height: calc(100dvh - 101px);
     position: relative;
     overflow: hidden;
 }
@@ -27,7 +27,7 @@
 }
 
 /* Video resolution - 768x432 (768 / 432 ~= 1.7778 */
-@media screen and (width < calc(1.7778 * (100dvh - 92px))) {
+@media screen and (width < calc(1.7778 * (100dvh - 101px))) {
     .hero__background-video {
         width: auto;
         height: 100%;
@@ -37,8 +37,8 @@
 .hero .col {
     display: grid;
     place-content: center start;
-    background-image: conic-gradient(#013334c0, #013334c0);
-    box-shadow: 0 0 0 100vw #013334c0;
+    background-image: conic-gradient(#01333470, #01333470);
+    box-shadow: 0 0 0 100vw #01333470;
 }
 
 .hero .container {
@@ -48,7 +48,7 @@
     display: flex;
     align-items: flex-start;
     gap: unset;
-    height: calc(100dvh - 92px);
+    height: calc(100dvh - 101px);
 
     padding-top: 60px;
     padding-top: calc(3 * var(--size-base, 20px));
