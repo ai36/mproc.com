@@ -95,3 +95,4 @@ document.getElementById('contactForm').addEventListener('submit', async (event) 
         errorMessageDiv.textContent = 'A network error has occurred. Please check your internet connection';
     }
 });
+

@@ -7,9 +7,12 @@
 }
 
 .header-bar .row {
-    background-color: transparent;
+    background-color: #013334;
+    background-color: var(--color-bg-alt, #013334);
     position: absolute;
     z-index: 1;
+
+    border-top: 2px solid #fff4;
 }
 
 .header-bar .container {

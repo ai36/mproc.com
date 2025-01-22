@@ -49,6 +49,7 @@ textarea {
 
 a {
     color: inherit;
+    fill: currentColor;
     text-decoration: none;
 }
 
