@@ -31,13 +31,21 @@
     }
 }
 
-.persons-item__photo {
+.persons__link .persons-item__photo {
+    transition: .6s ease-out;
+    transition: calc(2 * var(--ttime, .2s)) ease-out;
+
     width: 100%;
     height: auto;
     display: block;
     
     border-radius: 20px;
     border-radius: calc(1 * var(--size-base, 20px));
+
+}
+
+.persons__link:hover .persons-item__photo { 
+    transform: perspective(400px) rotateY(5deg);
 }
 
 .persons-item__title {

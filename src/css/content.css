@@ -1,0 +1,21 @@
+.content .col {
+    max-width: 960px;
+    padding: 40px;
+    padding: calc(2 * var(--size-base, 20px));
+    padding-bottom: 80px;
+    padding-bottom: calc(4 * var(--size-base, 20px));
+}
+
+.content h3 {
+    text-align: left;
+    margin-right: auto;
+}
+
+.content p {
+    text-align: left;
+    margin-right: auto;
+}
+
+.content ul {
+    margin-right: auto;
+}

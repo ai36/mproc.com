@@ -81,3 +81,123 @@
     margin-bottom: 3em;
     max-width: 570px;
 }
+
+
+
+
+
+/* hero for inner page */
+.hero--inner .row {
+    position: unset;
+    min-height: unset;
+    overflow: unset;
+    background-image: conic-gradient(#01333470, #01333470);
+    margin-bottom: 200px;
+    margin-bottom: min(200px, 15vw);
+}
+
+@media screen and (width < 600px) {
+    .hero--inner .row {
+        margin-bottom: 0;
+    }
+}
+
+.hero--inner .col {
+    box-shadow: unset;
+    display: flex;
+    background-image: unset;
+}
+
+.hero--inner .container {
+    display: grid;
+    grid-template: 1fr/repeat(3, 1fr);
+    align-items: center;
+    gap: 40px;
+    gap: calc(2 * var(--size-base, 20px));
+    box-shadow: unset;
+    height: unset;
+    color: var(--color-text, #444);
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0 auto;
+    transform: translateY(50%);
+}
+
+@media screen and (width < 600px) {
+    .hero--inner .container {
+        grid-template: repeat(5, auto)/1fr;
+        transform: unset;
+        padding-top: 80px;
+        padding-top: calc(4 * var(--size-base, 20px));
+        padding-bottom: 40px;
+        padding-bottom: calc(2 * var(--size-base, 20px));
+    }
+}
+
+.hero__img {
+    border-radius: 20px;
+    grid-area: 1/1/2/2;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (width < 600px) {
+    .hero__img {
+        max-width: 300px;
+        grid-area: 3/1/4/2;
+    }
+}
+
+.hero-inner__content {
+    grid-area: 1/2/2/4;
+    width: fit-content;
+}
+
+@media screen and (width < 600px) {
+    .hero-inner__content {
+        grid-area: 1/1/-1/-1;
+    }
+}
+
+.hero--inner .hero__title {
+    margin-bottom: 3em;
+    width: fit-content;
+    font-size: 160%;
+}
+
+.hero--inner .hero__pretitle {
+    white-space: nowrap;
+}
+
+@media screen and (width < 900px) {
+    .hero--inner .hero__pretitle {
+        font-size: 200%;
+    }
+}
+
+.hero__action--bg-navy {
+    min-width: 152px;
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
+
+    background-color: #02959b;
+    background-color: var(--color-text-accent, #02959b);
+    border-color: #02959b;
+    border-color: var(--color-text-accent, #02959b);
+
+    grid-column: 1/-1;
+    width: min-content;
+    margin: 0 auto 0 0;
+}
+
+@media screen and (width < 600px) {
+    .hero__action--bg-navy {
+        margin-top: 380px;
+    }
+}
+
+.hero__action--bg-navy:hover {
+    color: #02959b;
+    color: var(--color-text-accent, #02959b);
+    border-color: currentColor;
+}

@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    @@include('html/head.html', {
+    "title": "Meridian park - Radiation Oncology care",
+    "desc": "We Don’t Just Treat, We Care - Compassionate Cancer Care Close to Home - Meridian park",
+    "url": "//mproc.com/index.html",
+    "canonical": "https://mproc.com/index.html",
+    "image": "//mproc.com/img/home.jpg",
+    })
 </head>
 
 <body>
@@ -131,16 +133,18 @@
                             <h2 class="persons__title">Meet our Doctors</h2>
                             <div class="persons__box">
                                 <div class="persons__item">
-                                    <picture>
-                                        <img src="img/raymond-tan-md-600x600.jpg" alt="" class="persons-item__photo">
-                                    </picture>
+                                    <a class="persons__link" href="raymond-tan-md.html">
+                                            <img src="img/raymond-tan-md-600x600.jpg" alt="" class="persons-item__photo">  
+                                    </a>
                                     <h3 class="persons-item__title">Raymond Tan, MD</h3>
                                     <p class="persons-item__desc">Radiation Oncologist</p>
                                 </div>
                                 <div class="persons__item">
-                                    <picture>
-                                        <img src="img/norman-willis-md-600x600.png" alt="" class="persons-item__photo">
-                                    </picture>
+                                    <a class="persons__link" href="norman-willis-md.html">
+                                        <picture>
+                                            <img src="img/norman-willis-md-600x600.png" alt="" class="persons-item__photo">
+                                        </picture>
+                                    </a>
                                     <h3 class="persons-item__title">Norman Willis, MD</h3>
                                     <p class="persons-item__desc">Radiation Oncologist</p>
                                 </div>
