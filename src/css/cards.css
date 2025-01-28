@@ -112,3 +112,34 @@
 }
 
 
+
+
+
+.cards-box--person {
+    grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+}
+
+@media screen and (width < 1200px) {
+    .cards-box--person {
+        max-width: unset;
+        grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+    }
+}
+
+@media screen and (width < 900px) {
+    .cards-box--person {
+        max-width: 480px;
+        grid-template: repeat(2, 1fr)/repeat(1, 1fr);
+    }
+}
+
+.cards-box--person .cards-box__item {
+    background-color: #013334;
+    background-color: var(--color-bg-alt, #013334);
+    background-image: unset;
+    /* background-image: linear-gradient(#0000 30%, #000f); */
+    justify-content: flex-start;
+    aspect-ratio: 1.56/1;
+    filter: opacity(.4)
+}
+
