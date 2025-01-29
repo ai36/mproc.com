@@ -19,6 +19,7 @@
     --color-bg-green: #ADDAAD;
     --color-bg-sky: #2AC4DF;
     --color-bg-softgreen: #557777;
+    --color-bg-softcyan: #deedf0;
     --color-bg-dark: #0a1113;
 }
 
@@ -45,6 +46,12 @@ input,
 textarea {
     color: inherit;
     font: inherit;
+}
+
+a,
+button {
+    transition: .2s;
+    transition: var(--ttime, .2s);
 }
 
 a {
@@ -92,11 +99,11 @@ h3 {
 }
 
 p {
-    text-wrap: pretty; 
+    text-wrap: pretty;
 }
 
 span {
-    text-wrap: pretty; 
+    text-wrap: pretty;
 }
 
 button {
@@ -117,9 +124,6 @@ button {
     display: flex;
     align-items: center;
     gap: .8em;
-
-    transition: .2s;
-    transition: var(--ttime, .2s);
 }
 
 button:hover {
@@ -131,7 +135,7 @@ button:hover {
     cursor: pointer;
 }
 
-button > svg {
+button>svg {
     width: 1.5em;
 }
 
