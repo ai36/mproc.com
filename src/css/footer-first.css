@@ -1,7 +1,7 @@
 .footer--first .row {
     background-color: #013334;
     background-color: var(--color-bg-alt, #013334);
-    font-size: 110%;
+    font-size: 100%;
 }
 
 .footer--first .container {

@@ -1,9 +1,13 @@
 .header-bar {
-    fill: #D7E0E3;
-    fill: var(--color-text-lgrey, #D7E0E3);
+    fill: currentColor;
     color: #D7E0E3;
     color: var(--color-text-lgrey, #D7E0E3);
     font-size: 90%;
+}
+
+.page--inner .header-bar {
+    color: #444;
+    color: var(--color-text, #444);
 }
 
 .header-bar .row {
@@ -32,6 +36,21 @@
     align-items: center;
     gap: 20px;
     gap: calc(1 * var(--size-base, 20px));
+}
+
+.header-bar-phone__link:hover,
+.header-bar-email__link:hover,
+.header-bar-address__link:hover {
+    color:#02959b;
+    color: var(--color-text-accent, #02959b);
+}
+
+.page--home .header-bar-phone__link:hover,
+.page--home .header-bar-email__link:hover,
+.page--home .header-bar-address__link:hover {
+    color: #e5feff;
+    color: var(--color-bg-light, #e5feff);
+
 }
 
 @media screen and (width < 700px) {

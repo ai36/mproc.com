@@ -134,12 +134,12 @@
 }
 
 .cards-box--person .cards-box__item {
-    background-color: #013334;
-    background-color: var(--color-bg-alt, #013334);
+    background-color: #deedf0;
+    background-color: var(--color-bg-softcyan, #deedf0);
     background-image: unset;
-    /* background-image: linear-gradient(#0000 30%, #000f); */
+    color: #444;
+    color: var(--color-text, #444);
     justify-content: flex-start;
-    aspect-ratio: 1.56/1;
-    filter: opacity(.4)
+    aspect-ratio: unset;
 }
 

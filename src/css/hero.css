@@ -91,7 +91,9 @@
     position: unset;
     min-height: unset;
     overflow: unset;
-    background-image: conic-gradient(#01333470, #01333470);
+    /* background-image: conic-gradient(#01333470, #01333470); */
+    background-color: #deedf0;
+    background-color: var(--color-bg-softcyan, #deedf0);
     margin-bottom: 200px;
     margin-bottom: min(200px, 15vw);
 }
@@ -167,6 +169,7 @@
 
 .hero--inner .hero__pretitle {
     white-space: nowrap;
+    font-size: 238%
 }
 
 @media screen and (width < 900px) {

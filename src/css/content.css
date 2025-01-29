@@ -1,9 +1,64 @@
 .content .col {
-    max-width: 960px;
-    padding: 40px;
-    padding: calc(2 * var(--size-base, 20px));
+    /* max-width: 960px; */
+    /* padding: 40px;
+    padding: calc(2 * var(--size-base, 20px)); */
+    padding-top: 40px;
+    padding-top: calc(2 * var(--size-base, 20px));
     padding-bottom: 80px;
     padding-bottom: calc(4 * var(--size-base, 20px));
+}
+
+.content .container {
+    display: grid;
+    grid-template: 1fr/repeat(3, 1fr);
+    gap: 40px;
+    gap: calc(2 * var(--size-base, 20px));
+}
+
+@media screen and (width < 800px) {
+    .content .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.content__sidebar {
+    grid-area: 1/1/2/2;
+}
+
+.content__main {
+    grid-area: 1/2/2/4;
+}
+
+.content__sidebar .cards-box {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (width < 800px) {
+    .content__sidebar .cards-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: unset;
+        justify-content: center;
+    }
+}
+
+@media screen and (width < 800px) {
+    .content__sidebar .cards-box__item {
+        flex: 1;
+        max-width: calc(50% - 20px);
+        max-width: calc(50% - var(--size-base, 20px));
+        min-width: 250px;
+    }
+}
+
+@media screen and (width < 600px) {
+    .content__sidebar .cards-box__item {
+        max-width: 300px;
+        min-width: 300px;
+    }
 }
 
 .content h3 {
