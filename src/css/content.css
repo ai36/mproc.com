@@ -48,8 +48,8 @@
 @media screen and (width < 800px) {
     .content__sidebar .cards-box__item {
         flex: 1;
-        max-width: calc(50% - 20px);
-        max-width: calc(50% - var(--size-base, 20px));
+        /* max-width: calc(50% - 20px);
+        max-width: calc(50% - var(--size-base, 20px)); */
         min-width: 250px;
     }
 }

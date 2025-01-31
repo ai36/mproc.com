@@ -153,11 +153,7 @@
 .present-content__quote--person {
     padding: 20px 0;
     padding: calc(1 * var(--size-base,20px)) 0;
-    border: 4px solid #02959b;
-    border-color: var(--color-text-accent, #02959b);
-    border-width: calc(.25 * var(--size-base, 20px));
-    border-left: none;
-    border-right: none;
-
-    max-width: 70%;
+    padding-bottom: 0;
+    max-width: unset;
+    font-size: 100%;
 }
