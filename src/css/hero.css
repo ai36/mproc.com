@@ -153,28 +153,30 @@
 .hero-inner__content {
     grid-area: 1/2/2/4;
     width: fit-content;
+    transform: translateY(1.5em);
 }
 
 @media screen and (width < 600px) {
     .hero-inner__content {
         grid-area: 1/1/-1/-1;
+        transform: translateY(-1em);
     }
 }
 
 .hero--inner .hero__title {
-    margin-bottom: 3em;
+    margin-bottom: 0;
     width: fit-content;
-    font-size: 160%;
+    font-size: 120%;
 }
 
 .hero--inner .hero__pretitle {
     white-space: nowrap;
-    font-size: 238%
+    font-size: 160%;
 }
 
 @media screen and (width < 900px) {
     .hero--inner .hero__pretitle {
-        font-size: 200%;
+        font-size: 160%;
     }
 }
 
