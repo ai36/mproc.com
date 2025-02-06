@@ -1,7 +1,4 @@
 .content .col {
-    /* max-width: 960px; */
-    /* padding: 40px;
-    padding: calc(2 * var(--size-base, 20px)); */
     padding-top: 40px;
     padding-top: calc(2 * var(--size-base, 20px));
     padding-bottom: 80px;
@@ -15,13 +12,6 @@
     gap: calc(2 * var(--size-base, 20px));
 }
 
-@media screen and (width < 800px) {
-    .content .container {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-}
-
 .content__sidebar {
     grid-area: 1/1/2/2;
 }
@@ -30,47 +20,64 @@
     grid-area: 1/2/2/4;
 }
 
-.content__sidebar .cards-box {
+
+
+
+
+/* content on persons page */
+.page--person .content .container {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.page--person .content .content__sidebar {
+    margin-left: auto;
+}
+
+@media screen and (width < 700px) {
+    .page--person .content .content__sidebar {
+        display: none;
+    }
+}
+
+.page--person .content .content__cardsbox {
+    background-color: #deedf0;
+    background-color: var(--color-bg-softcyan, #deedf0);
+
     display: flex;
-    flex-direction: column;
+    align-items: center;
+
+    font-size: 65%;
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    padding: calc(2 * var(--size-base, 20px));
+    border-radius: 20px;
+    border-radius: var(--size-base, 20px);
 }
 
-@media screen and (width < 800px) {
-    .content__sidebar .cards-box {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: unset;
-        justify-content: center;
+@media screen and (width < 1200px) {
+    .page--person .content .content__cardsbox {
+        font-size: 77%;
     }
 }
 
-@media screen and (width < 800px) {
-    .content__sidebar .cards-box__item {
-        flex: 1;
-        /* max-width: calc(50% - 20px);
-        max-width: calc(50% - var(--size-base, 20px)); */
-        min-width: 250px;
+@media screen and (width < 1100px) {
+    .page--person .content .content__cardsbox {
+        font-size: 85%;
     }
 }
 
-@media screen and (width < 600px) {
-    .content__sidebar .cards-box__item {
-        max-width: 300px;
-        min-width: 300px;
-    }
+.page--person .content .content-cardsbox__item {
+    background-image: unset;
+    color: #444;
+    color: var(--color-text, #444);
+    justify-content: flex-start;
+    aspect-ratio: 1;
 }
 
-.content h3 {
-    text-align: left;
-    margin-right: auto;
+@media screen and (width < 700px) {
+.page--person .content .content__main {
+    grid-area: 1/1/-1/-1;
 }
-
-.content p {
-    text-align: left;
-    margin-right: auto;
-}
-
-.content ul {
-    margin-right: auto;
 }

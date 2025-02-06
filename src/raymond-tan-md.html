@@ -11,25 +11,43 @@
     })
 </head>
 
-<body class="page page--inner">
+<body class="page page--person">
     <div id="root">
 
         @@include('html/header.html')
 
         <main>
-            <section class="hero hero--inner">
+            <section class="hero">
                 <div class="row">
                     <div class="col">
                         <div class="container">
-                            <img class="hero__img" src="img/raymond-tan-md-600x600.jpg">
-                            <div class="hero-inner__content">
-                                <span class="hero__pretitle">Raymond Tan MD</span>
-                                <h1 class="hero__title">Radiation Oncologist</h1>
+                            <div class="hero__content">
 
-                                <p class="present-content__quote present-content__quote--person">
-                                    "Compassionate patient care in a culture of medical excellence"
-                                    <span>– Raymond Tan MD</span>
+                                <h1 class="hero__title">Raymond Tan MD</h1>
+
+                                <span class="hero__subtitle">Radiation Oncologist</span>
+
+                                <p class="hero__quote">
+                                    <span class="hero-quote__text">"Compassionate patient care in a culture of medical excellence"</span>
+                                    <span class="hero-quote__sign"></span>
                                 </p>
+
+                                <div class="hero__cardsbox">
+                                    <div class="hero-cardsbox__item hero-cardsbox__item--img">
+                                        <img src="img/raymond-tan-md-600x600.jpg" alt="">
+                                    </div>
+                                    <div class="hero-cardsbox__item hero-cardsbox__item--edu">
+                                        <h3>Medical Education</h3>
+                                        <p>Tufts University School of Medicine</p>
+                                        <h3>Residency Training</h3>
+                                        <p>Stanford University School of Medicine</p>
+                                        <h3>Board Certifications</h3>
+                                        <p>
+                                            Radiation Oncology<br>
+                                            American Board of Radiology
+                                        </p>
+                                    </div>
+                                </div>
 
                                 <button class="hero__action hero__action--bg-navy">
                                     Request an Appointment
@@ -48,8 +66,8 @@
                     <div class="col">
                         <div class="container">
                             <div class="content__sidebar">
-                                <div class="cards-box cards-box--person">
-                                    <div class="cards-box__item">
+                                <div class="content__cardsbox">
+                                    <div class="content-cardsbox__item content-cardsbox__item--edu">
                                         <h3>Medical Education</h3>
                                         <p>Tufts University School of Medicine</p>
                                         <h3>Residency Training</h3>
