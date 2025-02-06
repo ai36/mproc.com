@@ -1,18 +1,16 @@
 .header-bar {
-    fill: currentColor;
     color: #D7E0E3;
     color: var(--color-text-lgrey, #D7E0E3);
+    fill: currentColor;
     font-size: 90%;
 }
 
-.page--inner .header-bar {
+.page--person .header-bar {
     color: #444;
     color: var(--color-text, #444);
 }
 
 .header-bar .row {
-    /* background-color: #013334;
-    background-color: var(--color-bg-alt, #013334); */
     background-color: transparent;
     position: absolute;
     z-index: 1;
@@ -82,11 +80,6 @@
 
 
 
-/* header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-} */
 
 .header-nav .row {
     background-color: #013334;
@@ -100,8 +93,15 @@
     padding: calc(1 * var(--size-base, 20px));
     display: flex;
     flex-direction: row;
-
     height: 101px;
+}
+
+@media screen and (orientation: landscape) and (height < 576px) {
+    .header-nav .container  {
+        padding: 10px 20px;
+        padding: calc(.5 * var(--size-base, 20px)) calc(1 * var(--size-base, 20px));
+        height: 72px;
+    }
 }
 
 .header-nav__logo {
@@ -150,6 +150,8 @@
 }
 
 .nav-menu-item__link {
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
     text-transform: capitalize;
     font-weight: 600;
     white-space: nowrap;
@@ -229,6 +231,8 @@
 }
 
 .nav-submenu-item__link {
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
     text-transform: capitalize;
     font-weight: 600;
     white-space: nowrap;

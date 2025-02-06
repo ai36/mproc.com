@@ -11,29 +11,47 @@
     })
 </head>
 
-<body class="page page--inner">
+<body class="page page--person">
     <div id="root">
 
         @@include('html/header.html')
 
         <main>
-            <section class="hero hero--inner">
+            <section class="hero">
                 <div class="row">
                     <div class="col">
                         <div class="container">
-                            <img class="hero__img" src="img/norman-willis-md-600x600.png">
-                            <div class="hero-inner__content">
-                                <span class="hero__pretitle">Norman Willis MD</span>
-                                <h1 class="hero__title">Radiation Oncologist</h1>
+                            <div class="hero__content">
 
-                                <p class="present-content__quote present-content__quote--person">
-                                    "My Patients are Human Beings – not a diagnosis"
-                                    <span>– Norman Willis MD</span>
+                                <h1 class="hero__title">Norman Willis MD</h1>
+
+                                <span class="hero__subtitle">Radiation Oncologist</span>
+
+                                <p class="hero__quote">
+                                    <span class="hero-quote__text">"My Patients are Human Beings – not a diagnosis"</span>
+                                    <span class="hero-quote__sign"></span>
                                 </p>
 
+                                <div class="hero__cardsbox">
+                                    <div class="hero-cardsbox__item hero-cardsbox__item--img">
+                                        <img src="img/norman-willis-md-600x600.png" alt="">
+                                    </div>
+                                    <div class="hero-cardsbox__item hero-cardsbox__item--edu">
+                                        <h3>Medical Education</h3>
+                                        <p>University of California, Los Angeles</p>
+                                        <h3>Residency Training</h3>
+                                        <p>University of California, Los Angeles</p>
+                                        <h3>Board Certifications</h3>
+                                        <p>
+                                            Radiation Oncology<br>
+                                            American Board of Radiology
+                                        </p>
+                                    </div>
+                                </div>
+
                                 <button class="hero__action hero__action--bg-navy">
-                                    Request an Appointment
-                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <span class="hero-action__text">Request an Appointment</span>
+                                    <svg class="hero-action__icon" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" />
                                     </svg>
                                 </button>
@@ -48,8 +66,8 @@
                     <div class="col">
                         <div class="container">
                             <div class="content__sidebar">
-                                <div class="cards-box cards-box--person">
-                                    <div class="cards-box__item">
+                                <div class="content__cardsbox">
+                                    <div class="content-cardsbox__item content-cardsbox__item--edu">
                                         <h3>Medical Education</h3>
                                         <p>University of California, Los Angeles</p>
                                         <h3>Residency Training</h3>
