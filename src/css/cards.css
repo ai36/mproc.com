@@ -38,6 +38,7 @@
     -ms-overflow-style: none;
 
     padding: 0 20px;
+    padding: 0 calc(1 * var(--size-base, 20px));
 }
 
 .cards-group::-webkit-scrollbar {
