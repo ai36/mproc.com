@@ -106,3 +106,12 @@ document.addEventListener('DOMContentLoaded', () => {
     copyYear.textContent = `${new Date().getFullYear()}`;
 }, { once: true });
 
+
+
+
+
+
+window.addEventListener('load', () => {
+    const block = document.querySelector('.cards-group--end'); // Выберите ваш блок
+    block.scrollLeft = block.scrollWidth; // Прокрутка вправо до конца
+  });
