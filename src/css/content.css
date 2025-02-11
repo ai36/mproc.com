@@ -81,3 +81,15 @@
     grid-area: 1/1/-1/-1;
 }
 }
+
+
+
+
+
+
+/* content on persons page */
+.page--inner .content .container {
+    display: block;
+    max-width: 1020px;
+    margin: 0 auto;
+}

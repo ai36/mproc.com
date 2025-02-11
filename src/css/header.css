@@ -5,7 +5,8 @@
     font-size: 90%;
 }
 
-.page--person .header-bar {
+.page--person .header-bar,
+.page--inner .header-bar {
     color: #444;
     color: var(--color-text, #444);
 }
@@ -39,7 +40,7 @@
 .header-bar-phone__link:hover,
 .header-bar-email__link:hover,
 .header-bar-address__link:hover {
-    color:#02959b;
+    color: #02959b;
     color: var(--color-text-accent, #02959b);
 }
 
@@ -97,7 +98,7 @@
 }
 
 @media screen and (orientation: landscape) and (height < 576px) {
-    .header-nav .container  {
+    .header-nav .container {
         padding: 10px 20px;
         padding: calc(.5 * var(--size-base, 20px)) calc(1 * var(--size-base, 20px));
         height: 72px;
@@ -214,7 +215,7 @@
     .header-nav__menu.active .nav-menu-item__link {
         cursor: default;
         font-weight: 800;
-                
+
         color: #02959b;
         color: var(--color-text-accent, #02959b);
     }
