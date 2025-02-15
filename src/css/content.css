@@ -24,7 +24,7 @@
 
 
 
-/* content on persons page */
+/* content on persons pages */
 .page--person .content .container {
     max-width: 1020px;
     margin: 0 auto;
@@ -77,19 +77,33 @@
 }
 
 @media screen and (width < 700px) {
-.page--person .content .content__main {
-    grid-area: 1/1/-1/-1;
+    .page--person .content .content__main {
+        grid-area: 1/1/-1/-1;
+    }
 }
-}
 
 
 
 
 
 
-/* content on persons page */
+/* content on inner pages */
 .page--inner .content .container {
     display: block;
     max-width: 1020px;
     margin: 0 auto;
+}
+
+.page--inner .inner-list-box-item__text span {
+    font-variant: small-caps;
+    text-transform: capitalize;
+    color: #02959b;
+    color: var(--color-text-accent, #02959b);
+}
+
+@media screen and (width > 700px) {
+    .page--inner .inner-list-box-item__text--justify span {
+        min-width: 8em;
+        display: inline-block;
+    }
 }
