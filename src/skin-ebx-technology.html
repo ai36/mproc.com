@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('html/head.html', {
+    "title": "Electronic Brachytherapy Targets Skin Cancer at the Source | Meridian park",
+    "desc": "Elekta Xoft® Axxent® Electronic Brachytherapy (eBx®) System® is a leading-edge, non-invasive treatment that precisely targets skin cancer at the source. Using an isotope-free x-ray source, it delivers a precise dose of radiation within 1mm of the tumor, ensuring optimal targeting, safety, and fewer treatment sessions - Meridian park",
+    "url": "//mproc.com/skin-ebx-technology.html",
+    "canonical": "https://mproc.com/skin-ebx-technology.html",
+    "image": "//mproc.com/img/skin-ebx-technology.jpg",
+    })
+</head>
+
+<body class="page page--inner page--skin-ebx-technology">
+    <div id="root">
+
+        @@include('html/header.html')
+
+        <main>
+            <section class="hero">
+                <div class="row">
+                    <div class="col">
+                        <div class="container">
+                            <div class="hero__content">
+                                <h1 class="hero__title">Treats cancer<br>with precision<br><span>cares</span><br>for your skin</h1>
+                                <div class="hero__cardsbox">
+                                    <a class="hero-cardsbox__item" href="electronic-brachytherapy.html">Electronic<br>brachytherapy</a>
+                                    <a class="hero-cardsbox__item" href="skin-ebx-technology.html">Skin eBx<br>technology</a>
+                                    <a class="hero-cardsbox__item" href="/">Skin eBx<br>vs Surgery</a>
+                                    <a class="hero-cardsbox__item" href="/">Patient<br>experience</a>
+                                    <a class="hero-cardsbox__item" href="/">Our<br>partners</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="row">
+                    <div class="col">
+                        <div class="container">
+                            <h2>Electronic Brachytherapy Targets Skin Cancer At The Source</h2>
+                            <p>Elekta Xoft® Axxent® Electronic Brachytherapy (eBx®) System® is a leading-edge technology that utilizes an isotope-free x-ray source inside the applicator to deliver a precise dose of radiation within 1mm of the tumor site. This allows a more precise set-up and improves targeting with smaller margins and smaller treatment fields, simplifying the radiation process leading to fewer treatments of higher doses.</p>
+                            <img src="img/elektra-xort.png" alt="Elektra Xort">
+                            <p>The source operates at 50 kV offering a unique combination to deliver high dose rate and low energy radiation. Faster dose fall-off of the low-energy x-ray source minimizes exposure to healthy surrounding tissues and guarantees safety. </p>
+                            <p>This non-invasive procedure can be completed in 8-10 treatment sessions on any externally accessible area on the body. This powerful technology allows dermatologists and radiation oncologists to work together to provide the best possible therapy with the greatest clinical outcomes for skin cancer patients.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="visit">
+                <div class="row">
+                    <div class="col">
+                        <div class="container">
+                            <div class="visit__content">
+                                <h2 class="visit-content__title">Visit Us</h2>
+                                <form action="" class="visit-content__form" id="contactForm">
+                                    <label class="visit-content-form__label">
+                                        <span>Patient Name<sub>*<sub></span>
+                                        <input class="visit-content-form__name" type="text" id="name" name="name" required placeholder="E.g. John Doe">
+                                    </label>
+                                    <label class="visit-content-form__label">
+                                        <span>Phone<sub>*<sub></span>
+                                        <input class="visit-content-form__phone" type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Only digits, e.g. 5031234567">
+                                    </label>
+                                    <label class="visit-content-form__label">
+                                        <span>Email<sub>*<sub></span>
+                                        <input class="visit-content-form__email" type="email" id="email" name="email" required placeholder="E.g. email@post.com">
+                                    </label>
+                                    <label class="visit-content-form__label">
+                                        <span>Referring physician<sub>*<sub></span>
+                                        <input class="visit-content-form__referring-physician" type="text" id="referringPhysician" name="referringPhysician" required placeholder="E.g. Alex Smith MD">
+                                    </label>
+                                    <p class="visit-content-form__desk">Your information is protected by HIPAA privacy regulations and used only for appointment scheduling. Our care coordinators will contact you within one business day to schedule your consultation.</p>
+                                    <button class="visit-content-form__action" type="submit">Request an Appointment</button>
+
+                                    <div id="errorMessage"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        @@include('html/footer.html')
+
+    </div>
+
+    <script defer="defer" src="js/app.min.js"></script>
+
+</body>
+
+</html>

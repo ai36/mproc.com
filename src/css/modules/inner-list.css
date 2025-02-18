@@ -22,7 +22,7 @@
 .inner-list-box__item {
     display: grid;
     grid-template-columns: var(--inner-list-height) 1fr;
-    align-items: center;
+    align-items: start;
     gap: 40px;
     gap: calc(2 * var(--size-base, 20px));
 }
@@ -36,12 +36,52 @@
     color: var(--color-text-accent, #02959b);
 
     border: 2px solid currentColor;
+    border: calc(.15 * var(--size-base)) solid currentColor;
     border-radius: 100%;
     box-shadow: 0 0 0 calc(.15 * var(--inner-list-height)) #deedf0 inset;
     fill: currentColor;
+
+    position: relative;
+}
+
+.inner-list-box-item__side::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    width: 43px;
+    width: calc(40px + .15 * var(--size-base));
+    height: 2px;
+    height: calc(.15 * var(--size-base));
+    background-color: #02959b;
+    background-color: var(--color-text-accent, #02959b);
 }
 
 .inner-list-box-item__side svg {
     width: 30%;
     aspect-ratio: 1;
+}
+
+.inner-list-box-item__text h3 {
+    height: 60px;
+    height: calc(.5 * var(--inner-list-height));
+    margin: 0;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.inner-list-box-item__text ul {
+    border-top: 2px solid;
+    border-top: calc(.15 * var(--size-base)) solid;
+    border-color: #02959b;
+    border-color: var(--color-text-accent, #02959b);
+    padding-top: 10px;
+}
+
+.inner-list-box-item__text span {
+    font-variant: small-caps;
+    text-transform: capitalize;
+    color: #02959b;
+    color: var(--color-text-accent, #02959b);
 }
