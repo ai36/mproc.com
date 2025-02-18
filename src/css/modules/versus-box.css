@@ -1,0 +1,72 @@
+.versus-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    gap: calc(2 * var(--size-base));
+    margin-top: 80px;
+    margin-top: calc(4 * var(--size-base));
+}
+
+@media screen and (width < 1100px) {
+    .versus-box {
+        gap: 20px;
+        gap: calc(1 * var(--size-base));
+    }
+}
+
+@media screen and (width < 600px) {
+    .versus-box {
+        gap: 0;
+
+        width: 100vw;
+        margin-left: -20px;
+
+        background: #deedf0 linear-gradient(90deg, #deedf0 calc(50% - 1px), #D7E0E3 calc(50% - 1px), #D7E0E3 calc(50% + 1px), #deedf0  calc(50% + 1px)) center 40px/100% calc(100% - 80px) no-repeat;
+        background: var(--color-bg-softcyan, #deedf0) linear-gradient(90deg, var(--color-bg-softcyan, #deedf0) calc(50% - 1px), var(--color-text-lgrey, #D7E0E3) calc(50% - 1px), var(--color-text-lgrey, #D7E0E3) calc(50% + 1px), var(--color-bg-softcyan, #deedf0)  calc(50% + 1px)) center 40px/100% calc(100% - 80px) no-repeat;
+    }
+}
+
+.versus-box__item {
+    display: grid;
+    grid-template-rows: 6em 1fr;
+
+    background-color: #deedf0;
+    background-color: var(--color-bg-softcyan, #deedf0);
+    padding: 40px;
+    padding: calc(2 * var(--size-base));
+    border-radius: 20px;
+    border-radius: calc(1 * var(--size-base));
+}
+
+@media screen and (width < 600px) {
+    .versus-box__item {
+        border-radius: unset;
+        background-color: unset;
+        padding: 40px 20px;
+        padding: calc(2 * var(--size-base)) calc(1 * var(--size-base));
+    }
+}
+
+.versus-box-item__list {
+    display: grid;
+    grid-template-rows: 6em repeat(5, 1fr);
+    gap: 10px;
+    gap: calc(.5 * var(--size-base));
+    height: 100%;
+}
+
+.versus-box-item-list-property:not(:last-child) {
+    border-bottom: 2px solid #D7E0E3;
+    border-bottom: calc(.1 * var(--size-base)) solid var(--color-text-lgrey, #D7E0E3);
+}
+
+@media screen and (width < 600px) {
+    .versus-box-item-list-property:not(:last-child) {
+        border: none;
+    }
+}
+
+.versus-box-item-list-property h4 {
+    color: #02959b;
+    color: var(--color-text-accent, #02959b);
+}
