@@ -20,6 +20,7 @@
 .header-bar .container {
     flex-direction: row;
     justify-content: space-evenly;
+    height: 70px;
 }
 
 @media screen and (width < 700px) {

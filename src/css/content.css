@@ -94,16 +94,13 @@
     margin: 0 auto;
 }
 
-.page--inner .inner-list-box-item__text span {
-    font-variant: small-caps;
-    text-transform: capitalize;
-    color: #02959b;
-    color: var(--color-text-accent, #02959b);
-}
 
-@media screen and (width > 700px) {
-    .page--inner .inner-list-box-item__text--justify span {
-        min-width: 8em;
-        display: inline-block;
-    }
+
+
+
+.page--inner .content .container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
 }
