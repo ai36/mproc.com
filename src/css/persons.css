@@ -73,3 +73,19 @@
     background-color: #D7E0E3;
     background-color: var(--color-text-lgrey, #D7E0E3);
 }
+
+
+
+
+.page--person .hero .hero-quote__text {
+    font-size: 100%;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.page--person .hero .hero-quote__sign {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    font-weight: 300;
+}

@@ -29,6 +29,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font: 600 normal 1rem/1.7 "Montserrat", system-ui, sans-serif;

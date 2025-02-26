@@ -70,3 +70,15 @@
     color: #02959b;
     color: var(--color-text-accent, #02959b);
 }
+
+.versus-box-item-list-property a:hover {
+    text-decoration: underline;
+}
+
+.versus-box-item-list-property svg {
+    fill: currentColor;
+    width: 1em;
+    height: auto;
+
+    vertical-align: sub;
+}

@@ -8,7 +8,7 @@ Radiation Oncology Care website - [https://mproc.com](https://mproc.com)
 
 ## Build production version
 
-`npx gulp`
+`gulp`
 
 Destination folder: **./dist/**
 

@@ -6,11 +6,14 @@
     gap: calc(2 * var(--size-base, 20px));
     width: 100%;
 
-    padding-top: 80px;
-    padding-top: calc(4 * var(--size-base, 20px));
-
     --inner-list-height: 120px;
 }
+
+.inner-list__box:not(:first-child) {
+    margin-top: 20px;
+    margin-top: calc(1 * var(--size-base, 20px));
+}
+
 
 @media screen and (width < 700px) {
     .inner-list__box {
@@ -79,9 +82,28 @@
     padding-top: 10px;
 }
 
+.inner-list-box-item__text li {
+    vertical-align: middle;
+}
+
 .inner-list-box-item__text span {
-    font-variant: small-caps;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: #02959b;
     color: var(--color-text-accent, #02959b);
+}
+
+.inner-list-box-item__text a:hover {
+    text-decoration: underline;
+}
+
+.inner-list-box-item__text svg {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.inner-list-box-item__text li:has(svg) {
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-top: var(--size-base, 20px);
 }
