@@ -331,40 +331,35 @@
 
 
 /* hero for inner page */
+.page--inner .hero {
+    margin-bottom: 75px;
+}
+
 .page--inner .hero .row {
-    background: transparent linear-gradient(#deedf0, #deedf0) center top/100% 700px no-repeat;
+    height: 700px;
+    background-color: #deedf0;
+    background-color: var(--color-bg-softcyan, #deedf0);
+    display: flex;
 }
 
 @media screen and (width < 700px) {
     .page--inner .hero .row {
-        background-repeat: repeat;
-        padding-bottom: 20px;
-        padding-bottom: calc(1 * var(--size-base, 20px));
-}
+        height: 500px;
+    }
 }
 
 .page--inner .hero .col {
     display: flex;
+    margin: 0 auto;
 }
 
 .page--inner .hero .container {
+    position: relative;
+
     display: flex;
     align-items: center;
-    padding: 0;
-    padding-top: 220px;
     margin: 0 auto;
-    min-height: 700px;
-}
-
-@media screen and (width < 700px) {
-    .page--inner .hero .container {
-        align-self: center;
-        white-space: normal;
-        margin: 0;
-
-        padding-top: 80px;
-        padding-top: calc(4 * var(--size-base, 20px));
-    }
+    padding: 0;
 }
 
 .page--inner .hero .hero__content {
@@ -372,37 +367,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 0 40px;
-    gap: 0 calc(2 * var(--size-base, 20px));
-    height: calc(560px);
     width: 100%;
-}
-
-@media screen and (width < 700px) {
-    .page--inner .hero .hero__content {
-        gap: 60px;
-        justify-content: space-evenly;
-        height: unset
-    }
 }
 
 .page--inner .hero .hero__title {
     margin: 0;
     line-height: 1;
     text-transform: uppercase;
+    text-align: center;
     font-size: 340%;
     font-weight: 700;
-}
 
-@media screen and (width < 700px) {
-    .page--inner .hero .hero__title {
-        align-self: center;
-        white-space: normal;
-        margin: 0;
-
-        padding: 0 20px;
-        padding: 0 calc(1 * var(--size-base, 20px));
-    }
+    padding: 0 20px;
+    padding: 0 calc(1 * var(--size-base, 20px));
 }
 
 .page--inner .hero .hero__title span {
@@ -410,22 +387,10 @@
     color: var(--color-text-accent, #02959b);
 }
 
-.page--person .hero .hero-quote__text {
-    font-size: 100%;
-    font-style: italic;
-    font-weight: 600;
-}
-
-.page--person .hero .hero-quote__sign {
-    display: block;
-    text-align: right;
-    font-style: italic;
-    font-weight: 300;
-}
-
-
-
 .page--inner .hero .hero__cardsbox {
+    position: absolute;
+    bottom: -75px;
+
     grid-area: 2/1/-1/-1;
 
     display: flex;
@@ -460,7 +425,7 @@
     height: 150px;
 
     flex: 0 0 200px;
-   
+
     display: flex;
     align-items: center;
     border-radius: 20px;
@@ -501,114 +466,38 @@
 
 
 /* Page modification */
-.page--electronic-brachytherapy .hero {
-    margin-bottom: 0px;
-}
-
-@media screen and (width < 1000px) {
-.page--electronic-brachytherapy .hero {
-    margin-bottom: 75px;
-}
-}
-
-@media screen and (width < 700px) {
-    .page--electronic-brachytherapy .hero {
-        margin-bottom: 0px;
-    }
-}
-
-.page--electronic-brachytherapy .header-bar .row {
-    backdrop-filter: brightness(10%);
-    background-color: #C7EDFA;
-}
-
 .page--electronic-brachytherapy .hero .row {
-    background-image: url("../img/ebx-ext-v3.png"), linear-gradient(90deg, #C7EDFA, #C7EDFA);
-    background-size: auto 635px;
-    background-position-x: calc((100vw - 1440px) / 2 + 300px), 0;
-    background-position-y: 70px; 
-}
-
-@media screen and (width < 1300px) {
-    .page--electronic-brachytherapy .hero .row {
-        background-position-x: calc((100vw - 1440px) / 2 + 200px), 0;
-    }
-}
-
-@media screen and (width < 1100px) {
-    .page--electronic-brachytherapy .hero .row {
-        background-position-x: calc((100vw - 1440px) / 2 + 150px), 0;
-    }
-}
-
-@media screen and (width < 1000px) {
-    .page--electronic-brachytherapy .hero .row {
-        background-image: url("../img/ebx-mobile-v3.png"), linear-gradient(90deg, #C7EDFA, #C7EDFA);
-        background-size: auto 700px;
-        background-position-x: calc((100vw - 1440px) / 2 + 300px), 0;
-        background-position-y: center;
-    }
+    background-image: url("../img/test/mim.jpg");
+    background-size: auto 700px;
+    background-position-x: calc(.5 * (100vw - 1120px));
+    background-repeat: no-repeat;
+    background-color: white;
 }
 
 @media screen and (width < 700px) {
     .page--electronic-brachytherapy .hero .row {
         background-size: auto 500px;
-        background-repeat: no-repeat;
-        background-position-x: calc((100vw - 1440px) / 2 + 400px), 0;
-        background-position-y: center;
+        background-position-x: center;
     }
 }
 
-@media screen and (width < 1000px) {
+.page--electronic-brachytherapy .hero .container {
+    width: 80%;
+}
+
+@media screen and (width < 900px) {
     .page--electronic-brachytherapy .hero .container {
-        padding-top: 70px;
-        height: 600px;
-        min-height: unset;
+        width: 90%;
     }
 }
 
-@media screen and (width < 1000px) {
-    .page--electronic-brachytherapy .hero .hero__content {
-        display: flex;
-        gap: 0 40px;
-        height: 100%;
-        transform: translateY(75px);
-    }
+.page--electronic-brachytherapy .hero .hero__content {
+    align-items: flex-start;
 }
 
-.page--electronic-brachytherapy .hero__title {
+.page--electronic-brachytherapy .hero .hero__title {
     text-align: left;
-    align-self: flex-start;
-    padding-left: 20px;
-}
-
-@media screen and (width < 1000px) {
-    .page--electronic-brachytherapy .hero__title {
-        padding-top: 1em;
-    }
-}
-
-@media screen and (width < 700px) {
-    .page--inner .hero .hero__title {
-        align-self: flex-start;
-        margin: 0;
-        padding: 0 20px;
-        padding: 0 calc(1 * var(--size-base, 20px));
-    }
-}
-
-@media screen and (width < 1100px) {
-    .page--electronic-brachytherapy .hero__title span {
-        display: block;
-        margin-bottom: 1.3em;
-    }
-}
-
-@media screen and (width < 1000px) {
-    .page--electronic-brachytherapy .hero__title span {
-        display: unset;
-        margin-bottom: 0;
-    }
+    text-shadow: 0 0 3px white, 0 0 2px white, 0 0 2px white, 0 0 2px white, 0 0 2px white;
 }
 
 
@@ -618,13 +507,15 @@
 
 .page--skin-ebx-technology .hero .row {
     background-image: url("../img/ebx-finger.png");
-    background-size: auto 705px;
+    background-size: auto 700px;
     background-position-x: right;
+    background-repeat: no-repeat;
+    background-color: white;
 }
 
 .page--skin-ebx-technology .hero .hero__title {
-    align-self: flex-start;
     padding: 0 20px;
+    transform: translateY(-27px);
 }
 
 @media screen and (width < 700px) {
@@ -651,11 +542,11 @@
 
 
 @media screen and (width < 700px) {
-.page--skin-ebx-vs-surgery .hero .row{
-    padding-bottom: 0;
-    margin-bottom: 60px;
-    margin-bottom: calc(3 * var(--size-base));
-}
+    .page--skin-ebx-vs-surgery .hero .row {
+        padding-bottom: 0;
+        margin-bottom: 60px;
+        margin-bottom: calc(3 * var(--size-base));
+    }
 }
 
 @media screen and (width < 700px) {

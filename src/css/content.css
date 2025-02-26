@@ -20,6 +20,59 @@
     grid-area: 1/2/2/4;
 }
 
+#publicresearch {
+    scroll-margin-block-start: 60px;
+
+    margin-top: 80px;
+    margin-top: calc(4 * var(--size-base, 20px));
+}
+
+#publicresearch h3 {
+    height: 60px;
+    height: calc(.5 * var(--inner-list-height));
+    margin: 0;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#publicresearch ul {
+    border-top: 2px solid;
+    border-top: calc(.15 * var(--size-base)) solid;
+    border-color: #02959b;
+    border-color: var(--color-text-accent, #02959b);
+    padding-top: 10px;
+}
+
+#publicresearch li {
+    vertical-align: middle;
+}
+
+#publicresearch span {
+    text-transform: uppercase;
+    color: #02959b;
+    color: var(--color-text-accent, #02959b);
+}
+
+#publicresearch a:hover {
+    text-decoration: underline;
+}
+
+#publicresearch svg {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+}
+
+#publicresearch li:has(svg) {
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-top: var(--size-base, 20px);
+}
+
+
+
+
 
 
 
@@ -98,9 +151,45 @@
 
 
 
+.page--inner .content .container figure {
+    max-width: 700px;
+    width: 100%;
+    margin: 60px auto 80px auto;
+    margin: calc(3 * var(--size-base, 20px)) auto calc(4 * var(--size-base, 20px)) auto;
+
+    background-color: #deedf0;
+    background-color: var(--color-bg-softcyan, #deedf0);
+}
+
+.page--inner .content .container figcaption {
+    font-size: clamp(0.875rem, -0.135rem + 4.308vw, 1.75rem);
+    font-weight: 650;
+    line-height: 1.2;
+    color: #013334;
+    color: var(--color-bg-alt, #013334);
+    margin: 0 auto;
+    padding: 20px 0;
+    padding: calc(1 * var(--size-base, 20px)) 0;
+    max-width: 60%;
+    text-align: center;
+}
+
+@media screen and (width < 700px) {
+    .page--inner .content .container figcaption { 
+        padding: calc(1 * var(--size-base, 20px));
+        max-width: unset;
+    }
+}
+
 .page--inner .content .container img {
     width: 100%;
-    max-width: 500px;
     height: auto;
-    margin: 0 auto;
 }
+
+
+
+
+
+
+/* page modification */
+
