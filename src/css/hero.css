@@ -495,9 +495,11 @@
     align-items: flex-start;
 }
 
-.page--electronic-brachytherapy .hero .hero__title {
-    text-align: left;
-    text-shadow: 0 0 3px white, 0 0 2px white, 0 0 2px white, 0 0 2px white, 0 0 2px white;
+@media screen and (width < 700px) {
+    .page--electronic-brachytherapy .hero .hero__title {
+        text-align: left;
+        text-shadow: 0 0 3px white, 0 0 2px white, 0 0 2px white, 0 0 2px white, 0 0 2px white;
+    }
 }
 
 
@@ -513,27 +515,54 @@
     background-color: white;
 }
 
-.page--skin-ebx-technology .hero .hero__title {
-    padding: 0 20px;
-    transform: translateY(-27px);
-}
-
 @media screen and (width < 700px) {
     .page--skin-ebx-technology .hero .row {
         background-image: url("../img/ebx-finger--rotate.png");
-        background-size: auto 515px;
+        background-size: auto 600px;
         background-repeat: no-repeat;
         background-position-y: top;
+        background-position-x: calc(100% + 80px);
     }
 }
 
-.page--skin-ebx-technology .hero {
-    margin-bottom: 0px;
+@media screen and (width < 1400px) {
+    .page--skin-ebx-technology .hero .container {
+        width: 80%;
+    }
+}
+
+@media screen and (width < 900px) {
+    .page--skin-ebx-technology .hero .container {
+        width: 90%;
+    }
+}
+
+@media screen and (width < 1400px) {
+    .page--skin-ebx-technology .hero .hero__content {
+        align-items: flex-start;
+    }
+}
+
+.page--skin-ebx-technology .hero .hero__title {
+    transform: translateY(-27px);
+}
+
+@media screen and (width < 1400px) {
+    .page--skin-ebx-technology .hero .hero__title {
+        font-size: 280%;
+    }
+}
+
+@media screen and (width < 1400px) {
+    .page--skin-ebx-technology .hero .hero__title {
+        text-align: left;
+    }
 }
 
 @media screen and (width < 700px) {
-    .page--skin-ebx-technology .hero {
-        margin-bottom: -120px;
+    .page--skin-ebx-technology .hero .hero__title {
+        text-align: left;
+        text-shadow: 0 0 3px #ccc, 0 0 2px #ccc, 0 0 2px #ccc, 0 0 2px #ccc, 0 0 2px #ccc;
     }
 }
 
