@@ -1,6 +1,6 @@
 .content .col {
-    padding-top: 40px;
-    padding-top: calc(2 * var(--size-base, 20px));
+    /* padding-top: 40px;
+    padding-top: calc(2 * var(--size-base, 20px)); */
     padding-bottom: 80px;
     padding-bottom: calc(4 * var(--size-base, 20px));
 }
