@@ -578,29 +578,13 @@
     }
 }
 
-@media screen and (width < 700px) {
-    .page--skin-ebx-vs-surgery .hero .container {
-        padding-top: 120px;
-        min-height: 300px;
-    }
-}
-
-@media screen and (width < 700px) {
-    .page--skin-ebx-vs-surgery .hero .hero__content {
-        transform: translateY(75px);
-    }
-}
-
 .page--skin-ebx-vs-surgery .hero .hero__title {
-    margin-top: 1em;
     text-align: center;
 }
 
 @media screen and (width < 700px) {
     .page--skin-ebx-vs-surgery .hero .hero__title {
-        margin-top: 0;
-        margin-bottom: 1em;
-        text-align: left;
+        margin: 0;
         font-size: 260%;
     }
 }
