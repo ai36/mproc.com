@@ -389,6 +389,8 @@
 
 .page--inner .hero .hero__cardsbox {
     position: absolute;
+    z-index: 1;
+
     bottom: -75px;
 
     grid-area: 2/1/-1/-1;
@@ -440,6 +442,8 @@
 
     padding: 0 20px;
     padding: 0 calc(1 * var(--size-base, 20px));
+
+    box-shadow: 0 0 1px #000 inset;
 }
 
 .page--inner .hero .hero-cardsbox__item:hover {
