@@ -5,12 +5,6 @@
     font-size: 90%;
 }
 
-.page--person .header-bar,
-.page--inner .header-bar {
-    color: #444;
-    color: var(--color-text, #444);
-}
-
 .header-bar .row {
     background-color: transparent;
     position: absolute;
@@ -78,6 +72,18 @@
         display: none;
     }
 }
+
+.page--person .header-bar,
+.page--inner .header-bar {
+    color: #444;
+    color: var(--color-text, #444);
+}
+
+.page--electronic-brachytherapy .header-bar {
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
+}
+
 
 
 
