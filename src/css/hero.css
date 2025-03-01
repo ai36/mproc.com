@@ -443,7 +443,7 @@
     padding: 0 20px;
     padding: 0 calc(1 * var(--size-base, 20px));
 
-    box-shadow: 0 0 1px #000 inset;
+    box-shadow: 0 0 2px #0008 inset;
 }
 
 .page--inner .hero .hero-cardsbox__item:hover {
@@ -471,11 +471,11 @@
 
 /* Page modification */
 .page--electronic-brachytherapy .hero .row {
-    background-image: url("../img/test/mim.jpg");
-    background-size: auto 700px;
-    background-position-x: calc(.5 * (100vw - 1120px));
+    background-color: #181616;
+    background-image: url("../img/test/mask.png"), radial-gradient(at center, #5e5e5e,#181616 67%);
+    background-size: auto 700px, auto;
+    background-position-x: calc(.5 * (100vw - 1120px)), 50%;
     background-repeat: no-repeat;
-    background-color: white;
 }
 
 @media screen and (width < 700px) {
@@ -499,10 +499,15 @@
     align-items: flex-start;
 }
 
+.page--electronic-brachytherapy .hero .hero__title {
+    color: #f0f0f0;
+    color: var(--color-text-alt, #f0f0f0);
+}
+
 @media screen and (width < 700px) {
     .page--electronic-brachytherapy .hero .hero__title {
         text-align: left;
-        text-shadow: 0 0 3px white, 0 0 2px white, 0 0 2px white, 0 0 2px white, 0 0 2px white;
+        text-shadow: 0 0 3px #525252, 0 0 2px #525252, 0 0 2px #525252, 0 0 2px #525252, 0 0 2px #525252;
     }
 }
 
@@ -566,13 +571,29 @@
 @media screen and (width < 700px) {
     .page--skin-ebx-technology .hero .hero__title {
         text-align: left;
-        text-shadow: 0 0 3px #ccc, 0 0 2px #ccc, 0 0 2px #ccc, 0 0 2px #ccc, 0 0 2px #ccc;
+        text-shadow: 0 0 3px #ccc, 0 0 3x #ccc, 0 0 3x #ccc, 0 0 3x #ccc, 0 0 3px #ccc;
     }
 }
 
 
 
 
+
+
+.page--skin-ebx-vs-surgery .hero .row {
+    background-image: url("../img/test/mim.jpg");
+    background-size: auto 700px;
+    background-position-x: calc(.5 * (100vw - 1120px));
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+@media screen and (width < 700px) {
+    .page--skin-ebx-vs-surgery .hero .row {
+        background-size: auto 500px;
+        background-position-x: center;
+    }
+}
 
 @media screen and (width < 700px) {
     .page--skin-ebx-vs-surgery .hero .row {
@@ -582,13 +603,40 @@
     }
 }
 
-.page--skin-ebx-vs-surgery .hero .hero__title {
-    text-align: center;
-}
-
 @media screen and (width < 700px) {
     .page--skin-ebx-vs-surgery .hero .hero__title {
         margin: 0;
         font-size: 260%;
+    }
+}
+
+.page--skin-ebx-vs-surgery .hero .container {
+    width: 80%;
+}
+
+@media screen and (width < 1200px) {
+    .page--skin-ebx-vs-surgery .hero .container {
+        width: 90%;
+    }
+}
+
+@media screen and (width < 900px) {
+    .page--skin-ebx-vs-surgery .hero .container {
+        width: 96%;
+    }
+}
+
+.page--skin-ebx-vs-surgery .hero .hero__content {
+    align-items: flex-start;
+}
+
+.page--skin-ebx-vs-surgery .hero .hero__title {
+    text-align: left;
+    font-size: 260%;
+}
+
+@media screen and (width < 700px) {
+    .page--skin-ebx-vs-surgery .hero .hero__title {
+        text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
     }
 }

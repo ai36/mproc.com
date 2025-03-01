@@ -192,4 +192,7 @@
 
 
 /* page modification */
-
+.page--patient-experience .content .container p {
+    margin-bottom: 40px;
+    margin-bottom: calc(2 * var(--size-base, 20px));
+}
