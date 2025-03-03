@@ -149,3 +149,22 @@
         display: none;
     }
 }
+
+
+
+
+
+
+/* page modification */
+.page--our-partners .present .row {
+    background: #fff;
+}
+
+.page--our-partners .present-content__quote {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.page--our-partners .present-content__action {
+    margin: 40px auto 0 auto;
+}

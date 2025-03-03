@@ -20,6 +20,13 @@
     grid-area: 1/2/2/4;
 }
 
+.lead {
+    font-size: 120%;
+    font-weight: 400;
+    margin-top: 80px;
+    margin-top: calc(4 * var(--size-base, 20px));
+}
+
 #publicresearch {
     scroll-margin-block-start: 60px;
 
@@ -195,4 +202,10 @@
 .page--patient-experience .content .container p {
     margin-bottom: 40px;
     margin-bottom: calc(2 * var(--size-base, 20px));
+}
+
+
+
+.page--our-partners .col {
+    padding-bottom: 0;
 }
