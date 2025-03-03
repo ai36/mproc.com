@@ -360,6 +360,7 @@
     align-items: center;
     margin: 0 auto;
     padding: 0;
+    width: 100%;
 }
 
 .page--inner .hero .hero__content {
@@ -637,6 +638,118 @@
 
 @media screen and (width < 700px) {
     .page--skin-ebx-vs-surgery .hero .hero__title {
+        text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+    }
+}
+
+
+
+
+
+.page--patient-experience .hero .row {
+    background-image: url("../img/test/mirror.jpg");
+    background-size: auto 700px;
+    background-position-x: calc(.5 * (100vw - 1120px));
+    background-repeat: no-repeat;
+    background-color: #E8E7E3;
+}
+
+@media screen and (width < 700px) {
+    .page--patient-experience .hero .row {
+        background-size: auto 500px;
+        background-position-x: center;
+    }
+}
+
+.page--patient-experience .hero .hero__content {
+    align-items: flex-start;
+}
+
+.page--patient-experience .hero .hero__title {
+    text-align: left;
+    transform: translateY(1em);
+}
+
+.page--patient-experience .hero .container {
+    width: 80%;
+}
+
+@media screen and (width < 1200px) {
+    .page--patient-experience .hero .container {
+        width: 90%;
+    }
+}
+
+@media screen and (width < 900px) {
+    .page--patient-experience .hero .container {
+        width: 96%;
+    }
+}
+
+
+
+
+
+.page--our-partners .header-bar .row {
+background-color: rgba(255,255,255,.5);
+}
+
+.page--our-partners .hero .row {
+    background-image: url("../img/test/partners.jpg");
+    background-size: auto 700px;
+    background-position: center;
+    /* background-position-x: calc(.5 * (100vw - 1120px)); */
+    background-repeat: no-repeat;
+    background-color: #eff2f7;
+}
+
+@media screen and (width < 900px) {
+    .page--our-partners .hero .row {
+        background-image: url("../img/test/partners-thin.jpg");
+        background-position-x: right;
+    }
+}
+
+@media screen and (width < 700px) {
+    .page--our-partners .hero .row {
+        background-size: auto 500px;
+    }
+}
+
+.page--our-partners .hero .hero__content {
+    align-items: flex-start;
+}
+
+.page--our-partners .hero .hero__title {
+    text-align: left;
+    transform: translateY(1em);
+}
+
+@media screen and (width < 900px) {
+.page--our-partners .hero .hero__title {
+    transform: unset;
+    max-width: 350px;
+}
+}
+
+.page--our-partners .hero .container {
+    width: 80%;
+}
+
+@media screen and (width < 1200px) {
+    .page--our-partners .hero .container {
+        width: 90%;
+    }
+}
+
+@media screen and (width < 900px) {
+    .page--our-partners .hero .container {
+        width: 96%;
+    }
+}
+
+@media screen and (width < 700px) {
+    .page--our-partners .hero .hero__title {
         text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
     }
 }
