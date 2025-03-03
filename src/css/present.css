@@ -166,5 +166,25 @@
 }
 
 .page--our-partners .present-content__action {
-    margin: 40px auto 0 auto;
+    margin: 40px auto 60px auto;
+    margin: calc(2 * var(--size-base)) auto calc(3 * var(--size-base)) auto;
 }
+
+
+.page--our-partners .present--bg-softcyan .row {
+    background-color: var(--color-bg-softcyan, #deedf0);
+}
+
+/* width: 400px;
+  font-size: 75%;
+  color: whitesmoke;
+  background-color: var(--color-bg-alt);
+  aspect-ratio: 1;
+  height: auto;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  place-content: center;
+  border-radius: 20px;
+  margin-top: 80px; */
