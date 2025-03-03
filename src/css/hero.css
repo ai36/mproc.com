@@ -501,6 +501,7 @@
 }
 
 .page--electronic-brachytherapy .hero .hero__title {
+    text-align: left;
     color: #f0f0f0;
     color: var(--color-text-alt, #f0f0f0);
 }
@@ -649,7 +650,7 @@
 .page--patient-experience .hero .row {
     background-image: url("../img/test/mirror.jpg");
     background-size: auto 700px;
-    background-position-x: calc(.5 * (100vw - 1120px));
+    background-position-x: calc(.5 * (100vw - 600px));
     background-repeat: no-repeat;
     background-color: #E8E7E3;
 }
@@ -657,7 +658,7 @@
 @media screen and (width < 700px) {
     .page--patient-experience .hero .row {
         background-size: auto 500px;
-        background-position-x: center;
+        background-position-x: calc(.5 * (100vw - 600px));
     }
 }
 
@@ -668,6 +669,8 @@
 .page--patient-experience .hero .hero__title {
     text-align: left;
     transform: translateY(1em);
+    color: #111;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 30px #fff, 0 0 30px #fff;
 }
 
 .page--patient-experience .hero .container {
