@@ -9,9 +9,9 @@
 @import url("present.css");
 @import url("persons.css");
 @import url("reviews.css");
-@import url("visit.css");
 @import url("footer.css");
 
 @import url("modules/inner-list.css");
 @import url("modules/versus-box.css");
 @import url("modules/partners-bar.css");
+@import url("modules/visit.css");

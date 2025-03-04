@@ -1,0 +1,16 @@
+<section class="hero">
+    <div class="row">
+        <div class="col">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">@@title</h1>
+                </div>
+                <div class="hero__cardsbox">
+                    @@for (var i = 0; i < cardsboxitems.length; i++) {
+                        <a class="hero-cardsbox__item" href="`+cardsboxitems[i].link+`">`+cardsboxitems[i].title+`</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

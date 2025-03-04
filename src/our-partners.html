@@ -17,24 +17,17 @@
         @@include('html/header.html')
 
         <main>
-            <section class="hero">
-                <div class="row">
-                    <div class="col">
-                        <div class="container">
-                            <div class="hero__content">
-                                <h1 class="hero__title">We <span>care</span><br> for our partners</h1>
-                            </div>
-                            <div class="hero__cardsbox">
-                                <a class="hero-cardsbox__item" href="/electronic-brachytherapy.html">Electronic<br>brachytherapy</a>
-                                <a class="hero-cardsbox__item" href="/skin-ebx-technology.html">Skin eBx<br>technology</a>
-                                <a class="hero-cardsbox__item" href="/skin-ebx-vs-surgery.html">Skin eBx<br>vs Surgery</a>
-                                <a class="hero-cardsbox__item" href="/patient-experience.html">Patient<br>experience</a>
-                                <a class="hero-cardsbox__item" href="/our-partners.html">Our<br>partners</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
+            @@include('html/hero-inner.html', {
+            "title": "We <span>care</span><br> for our partners",
+            "cardsboxitems": [
+            {"link": "/electronic-brachytherapy.html", "title": "Electronic<br>brachytherapy"},
+            {"link": "/skin-ebx-technology.html", "title": "Skin eBx<br>technology"},
+            {"link": "/skin-ebx-vs-surgery.html", "title": "Skin eBx<br>vs Surgery"},
+            {"link": "/patient-experience.html", "title": "Patient<br>experience"},
+            {"link": "/our-partners.html", "title": "Our<br>partners"}
+            ]
+            })
 
             <section class="content">
                 <div class="row">
@@ -84,48 +77,11 @@
                 </div>
             </section>
 
-            <section class="visit">
-                <div class="row">
-                    <div class="col">
-                        <div class="container">
-                            <div class="visit__content">
-                                <h2 class="visit-content__title">Visit Us</h2>
-                                <form action="" class="visit-content__form" id="contactForm">
-                                    <label class="visit-content-form__label">
-                                        <span>Patient Name<sub>*<sub></span>
-                                        <input class="visit-content-form__name" type="text" id="name" name="name" required placeholder="E.g. John Doe">
-                                    </label>
-                                    <label class="visit-content-form__label">
-                                        <span>Phone<sub>*<sub></span>
-                                        <input class="visit-content-form__phone" type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Only digits, e.g. 5031234567">
-                                    </label>
-                                    <label class="visit-content-form__label">
-                                        <span>Email<sub>*<sub></span>
-                                        <input class="visit-content-form__email" type="email" id="email" name="email" required placeholder="E.g. email@post.com">
-                                    </label>
-                                    <label class="visit-content-form__label">
-                                        <span>Referring physician<sub>*<sub></span>
-                                        <input class="visit-content-form__referring-physician" type="text" id="referringPhysician" name="referringPhysician" required placeholder="E.g. Alex Smith MD">
-                                    </label>
-                                    <p class="visit-content-form__desk">Your information is protected by HIPAA privacy regulations and used only for appointment scheduling. Our care coordinators will contact you within one business day to schedule your consultation.</p>
-                                    <button class="visit-content-form__action" type="submit">Request an Appointment</button>
-
-                                    <div id="errorMessage"></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            @@include('html/visit.html')
         </main>
-
         @@include('html/footer.html')
-
     </div>
-
     <script defer="defer" src="js/app.min.js"></script>
-
 </body>
 
 </html>
