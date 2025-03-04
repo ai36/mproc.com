@@ -17,40 +17,19 @@
         @@include('html/header.html')
 
         <main>
-            <section class="hero">
-                <div class="row">
-                    <div class="col">
-                        <div class="container">
-                            <div class="hero__content">
-                                <h1 class="hero__title">What our<br> patients <span>care</span> for</h1>
-                            </div>
-                            <div class="hero__cardsbox">
-                                <a class="hero-cardsbox__item" href="/electronic-brachytherapy.html">Electronic<br>brachytherapy</a>
-                                <a class="hero-cardsbox__item" href="/skin-ebx-technology.html">Skin eBx<br>technology</a>
-                                <a class="hero-cardsbox__item" href="/skin-ebx-vs-surgery.html">Skin eBx<br>vs Surgery</a>
-                                <a class="hero-cardsbox__item" href="/patient-experience.html">Patient<br>experience</a>
-                                <a class="hero-cardsbox__item" href="/our-partners.html">Our<br>partners</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section class="partners-bar">
-                <div class="row">
-                    <div class="col">
-                        <div class="container">
-                            <p class="partners-bar__desc">We partnered with leading dermatologists in our community</p>
-                            <button class="partners-bar__action present-content__action">
-                                Request an appointment
-                                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            @@include('html/hero-inner.html', {
+            "title": "What our<br> patients <span>care</span> for",
+            "cardsboxitems": [
+            {"link": "/electronic-brachytherapy.html", "title": "Electronic<br>brachytherapy"},
+            {"link": "/skin-ebx-technology.html", "title": "Skin eBx<br>technology"},
+            {"link": "/skin-ebx-vs-surgery.html", "title": "Skin eBx<br>vs Surgery"},
+            {"link": "/patient-experience.html", "title": "Patient<br>experience"},
+            {"link": "/our-partners.html", "title": "Our<br>partners"}
+            ]
+            })
+
+            @@include('html/partners-bar.html')
 
             <section class="content">
                 <div class="row">
@@ -58,7 +37,7 @@
                         <div class="container">
                             <h2>Skin Cancer Can Be Cured Without Surgery</h2>
                             <p>
-                                For years, Mohs surgery was the standard treatment for skin cancer. Now, patients with basal or squamous cell skin cancers have discovered more - 
+                                For years, Mohs surgery was the standard treatment for skin cancer. Now, patients with basal or squamous cell skin cancers have discovered more -
                             </p>
                             <div class="inner-list__box">
                                 <div class="inner-list-box__item">
@@ -107,48 +86,11 @@
                 </div>
             </section>
 
-            <section class="visit">
-                <div class="row">
-                    <div class="col">
-                        <div class="container">
-                            <div class="visit__content">
-                                <h2 class="visit-content__title">Visit Us</h2>
-                                <form action="" class="visit-content__form" id="contactForm">
-                                    <label class="visit-content-form__label">
-                                        <span>Patient Name<sub>*<sub></span>
-                                        <input class="visit-content-form__name" type="text" id="name" name="name" required placeholder="E.g. John Doe">
-                                    </label>
-                                    <label class="visit-content-form__label">
-                                        <span>Phone<sub>*<sub></span>
-                                        <input class="visit-content-form__phone" type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Only digits, e.g. 5031234567">
-                                    </label>
-                                    <label class="visit-content-form__label">
-                                        <span>Email<sub>*<sub></span>
-                                        <input class="visit-content-form__email" type="email" id="email" name="email" required placeholder="E.g. email@post.com">
-                                    </label>
-                                    <label class="visit-content-form__label">
-                                        <span>Referring physician<sub>*<sub></span>
-                                        <input class="visit-content-form__referring-physician" type="text" id="referringPhysician" name="referringPhysician" required placeholder="E.g. Alex Smith MD">
-                                    </label>
-                                    <p class="visit-content-form__desk">Your information is protected by HIPAA privacy regulations and used only for appointment scheduling. Our care coordinators will contact you within one business day to schedule your consultation.</p>
-                                    <button class="visit-content-form__action" type="submit">Request an Appointment</button>
-
-                                    <div id="errorMessage"></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            @@include('html/visit.html')
         </main>
-
         @@include('html/footer.html')
-
     </div>
-
     <script defer="defer" src="js/app.min.js"></script>
-
 </body>
 
 </html>
