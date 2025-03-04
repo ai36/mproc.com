@@ -348,6 +348,13 @@
     }
 }
 
+@media screen and (orientation: landscape) and (height < 700px) {
+    .page--inner .hero .row {
+        background-position-y: center;
+        max-height: 100dvh;
+    }
+}
+
 .page--inner .hero .col {
     display: flex;
     margin: 0 auto;
