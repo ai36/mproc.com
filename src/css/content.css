@@ -81,6 +81,36 @@
 
 
 
+.video-list__item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    gap: calc(2 * var(--size-base, 20px));
+
+    padding: 40px;
+    padding: calc(2 * var(--size-base, 20px));
+}
+
+@media screen and (width < 700px) {
+    .video-list__item {
+        flex-direction: column-reverse;
+    } 
+}
+
+.video-list-item__info,
+.video-list-item__wrapper {
+    flex: 1;
+}
+
+.video-list-item__wrapper video {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
 
 
 
