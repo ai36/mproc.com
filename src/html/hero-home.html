@@ -1,8 +1,15 @@
 <section class="hero">
     <div class="row">
-        <video class="hero__background-video" autoplay loop muted playsinline>
+        <video class="hero__background-video" autoplay loop muted playsinline poster="img/home-hero-1280x720.jpg">
             <source src="img/home-hero.mp4" type="video/mp4">
-            Your browser does not support the video tag
+            <picture>
+                <source srcset="img/home-hero-1280x720.avif" type="image/avif">
+                <source srcset="img/home-hero-1280x720.webp" type="image/webp">
+                <img src="img/home-hero-1280x720.jpg" alt="preview | Meridian park">
+            </picture>
+            <p>
+                Your browser does not support the video tag
+            </p>
         </video>
         <div class="col">
             <div class="container">
