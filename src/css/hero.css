@@ -404,15 +404,15 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 20px;
     gap: calc(1 * var(--size-base, 20px));
+    width: 100%;
 }
 
 @media screen and (width < 1360px) { /* (item width + gap) * number of item + 2 * gap */
     .page--inner .hero .hero__cardsbox {
-        width: 100%;
-        justify-content: unset;
+        justify-content: flex-start;
 
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -478,8 +478,9 @@
 
 /* Page modification */
 .page--electronic-brachytherapy .hero .row {
-    background-color: #181616;
-    background-image: url("../img/test/mask.png"), radial-gradient(at center, #5e5e5e,#181616 67%);
+    background-color: #212121;
+    background-image: url("../img/electronic-brachytherapy-1280x720.jpg");
+    /* background-image: url("../img/test/mask.png"), radial-gradient(at center, #5e5e5e,#181616 67%); */
     background-size: auto 700px, auto;
     background-position-x: calc(.5 * (100vw - 1120px)), 50%;
     background-repeat: no-repeat;
@@ -492,12 +493,12 @@
     }
 }
 
-.page--electronic-brachytherapy .hero .container {
+.page--electronic-brachytherapy .hero .container .hero__content {
     width: 80%;
 }
 
 @media screen and (width < 900px) {
-    .page--electronic-brachytherapy .hero .container {
+    .page--electronic-brachytherapy .hero .container .hero__content {
         width: 90%;
     }
 }
@@ -525,7 +526,7 @@
 
 
 .page--skin-ebx-technology .hero .row {
-    background-image: url("../img/ebx-finger.png");
+    background-image: url("../img/ebx-finger-1750x700.jpg");
     background-size: auto 700px;
     background-position-x: right;
     background-repeat: no-repeat;
@@ -534,7 +535,7 @@
 
 @media screen and (width < 700px) {
     .page--skin-ebx-technology .hero .row {
-        background-image: url("../img/ebx-finger--rotate.png");
+        background-image: url("../img/ebx-finger--rotate-700x515.jpg");
         background-size: auto 600px;
         background-repeat: no-repeat;
         background-position-y: top;
@@ -543,13 +544,13 @@
 }
 
 @media screen and (width < 1400px) {
-    .page--skin-ebx-technology .hero .container {
+    .page--skin-ebx-technology .hero .container .hero__content {
         width: 80%;
     }
 }
 
 @media screen and (width < 900px) {
-    .page--skin-ebx-technology .hero .container {
+    .page--skin-ebx-technology .hero .container .hero__content {
         width: 90%;
     }
 }
@@ -589,9 +590,9 @@
 
 
 .page--skin-ebx-vs-surgery .hero .row {
-    background-image: url("../img/test/mim.jpg");
+    background-image: url("../img/mim-1000x700.jpg");
     background-size: auto 700px;
-    background-position-x: calc(.5 * (100vw - 1120px));
+    background-position-x: calc(.5 * (100vw - 920px));
     background-repeat: no-repeat;
     background-color: white;
 }
@@ -618,12 +619,12 @@
     }
 }
 
-.page--skin-ebx-vs-surgery .hero .container {
+.page--skin-ebx-vs-surgery .hero .container .hero__content {
     width: 80%;
 }
 
 @media screen and (width < 1200px) {
-    .page--skin-ebx-vs-surgery .hero .container {
+    .page--skin-ebx-vs-surgery .hero .container .hero__content {
         width: 90%;
     }
 }
@@ -654,7 +655,7 @@
 
 
 .page--patient-experience .hero .row {
-    background-image: url("../img/test/mirror.jpg");
+    background-image: url("../img/mirror-1050x700.jpg");
     background-size: auto 700px;
     background-position-x: calc(.5 * (100vw - 600px));
     background-repeat: no-repeat;
@@ -679,12 +680,12 @@
     text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 30px #fff, 0 0 30px #fff;
 }
 
-.page--patient-experience .hero .container {
+.page--patient-experience .hero .container .hero__content {
     width: 80%;
 }
 
 @media screen and (width < 1200px) {
-    .page--patient-experience .hero .container {
+    .page--patient-experience .hero .container .hero__content {
         width: 90%;
     }
 }
@@ -699,12 +700,33 @@
 
 
 
+
+.page--patient-stories .hero .row {
+    background-image: url("../img/hero-stories.jpg");
+    background-size: auto 700px;
+    background-position-x: calc(.5 * (100vw - 600px));
+    background-repeat: no-repeat;
+    background-color: #bba693;
+}
+
+@media screen and (width < 700px) {
+    .page--patient-stories .hero .row {
+        background-size: auto 500px;
+        background-position-x: calc(.5 * (100vw - 600px));
+    }
+}
+
+
+
+
+
+
 .page--our-partners .header-bar .row {
 background-color: rgba(255,255,255,.5);
 }
 
 .page--our-partners .hero .row {
-    background-image: url("../img/test/partners.jpg");
+    background-image: url("../img/partners-1700x700.jpg");
     background-size: auto 700px;
     background-position: center;
     background-repeat: no-repeat;
@@ -713,7 +735,7 @@ background-color: rgba(255,255,255,.5);
 
 @media screen and (width < 900px) {
     .page--our-partners .hero .row {
-        background-image: url("../img/test/partners-thin.jpg");
+        background-image: url("../img/partners--thin-1291x700.jpg");
         background-position-x: right;
     }
 }
@@ -740,12 +762,12 @@ background-color: rgba(255,255,255,.5);
 }
 }
 
-.page--our-partners .hero .container {
+.page--our-partners .hero .container .hero__content {
     width: 80%;
 }
 
 @media screen and (width < 1200px) {
-    .page--our-partners .hero .container {
+    .page--our-partners .hero .container .hero__content {
         width: 90%;
     }
 }
