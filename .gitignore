@@ -4,6 +4,7 @@ dist/
 src/img/products/orig/
 src/img/projects/orig/
 src/img/src/
+src/img/*.mp4
 
 # Logs
 logs
