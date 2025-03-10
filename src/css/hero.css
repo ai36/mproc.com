@@ -480,7 +480,6 @@
 .page--electronic-brachytherapy .hero .row {
     background-color: #212121;
     background-image: url("../img/electronic-brachytherapy-1280x720.jpg");
-    /* background-image: url("../img/test/mask.png"), radial-gradient(at center, #5e5e5e,#181616 67%); */
     background-size: auto 700px, auto;
     background-position-x: calc(.5 * (100vw - 1120px)), 50%;
     background-repeat: no-repeat;
