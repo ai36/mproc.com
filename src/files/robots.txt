@@ -1,0 +1,13 @@
+User-Agent: Googlebot
+Disallow: /404.html
+Disallow: /thank-you.html
+Disallow: /privacy-policy.html
+Allow: /
+
+User-Agent: *
+Disallow: /404.html
+Disallow: /thank-you.html
+Disallow: /privacy-policy.html
+Allow: /
+
+Sitemap: https://mproc.com/sitemap(1).xml
