@@ -80,10 +80,28 @@
 }
 
 .reviews-content-box-item__photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
     margin: 1rem 0;
 }
 
 .reviews-content-box-item__name {
     font-size: 120%;
     font-weight: 600;
+}
+
+
+
+
+
+
+/* Page modification */
+.page--our-partners .reviews .row {
+    background-color: var(--color-bg-softcyan);
+}
+
+.page--our-partners .reviews .reviews__content {
+    margin: 0 auto;
 }

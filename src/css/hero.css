@@ -372,7 +372,7 @@
 .page--inner .hero .hero__content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 100%;
 }
@@ -381,12 +381,36 @@
     margin: 0;
     line-height: 1;
     text-transform: uppercase;
-    text-align: center;
-    font-size: 340%;
+    text-align: left;
+    font-size: 300%;
     font-weight: 700;
 
     padding: 0 20px;
     padding: 0 calc(1 * var(--size-base, 20px));
+}
+
+.page--inner .hero .container .hero__content {
+    width: 80%;
+}
+
+@media screen and (width < 1200px) {
+    .page--inner .hero .container .hero__content {
+        width: 90%;
+    }
+}
+
+@media screen and (width < 900px) {
+    .page--inner .hero .container .hero__content {
+        width: 96%;
+    }
+}
+
+
+
+@media screen and (width < 500px) {
+    .page--inner .hero .hero__title {
+        font-size: 260%;
+    }
 }
 
 .page--inner .hero .hero__title span {
@@ -492,20 +516,6 @@
     }
 }
 
-.page--electronic-brachytherapy .hero .container .hero__content {
-    width: 80%;
-}
-
-@media screen and (width < 900px) {
-    .page--electronic-brachytherapy .hero .container .hero__content {
-        width: 90%;
-    }
-}
-
-.page--electronic-brachytherapy .hero .hero__content {
-    align-items: flex-start;
-}
-
 .page--electronic-brachytherapy .hero .hero__title {
     text-align: left;
     color: #f0f0f0;
@@ -539,34 +549,6 @@
         background-repeat: no-repeat;
         background-position-y: top;
         background-position-x: calc(100% + 80px);
-    }
-}
-
-@media screen and (width < 1400px) {
-    .page--skin-ebx-technology .hero .container .hero__content {
-        width: 80%;
-    }
-}
-
-@media screen and (width < 900px) {
-    .page--skin-ebx-technology .hero .container .hero__content {
-        width: 90%;
-    }
-}
-
-@media screen and (width < 1400px) {
-    .page--skin-ebx-technology .hero .hero__content {
-        align-items: flex-start;
-    }
-}
-
-.page--skin-ebx-technology .hero .hero__title {
-    transform: translateY(-27px);
-}
-
-@media screen and (width < 1400px) {
-    .page--skin-ebx-technology .hero .hero__title {
-        font-size: 280%;
     }
 }
 
@@ -613,38 +595,6 @@
 
 @media screen and (width < 700px) {
     .page--skin-ebx-vs-surgery .hero .hero__title {
-        margin: 0;
-        font-size: 260%;
-    }
-}
-
-.page--skin-ebx-vs-surgery .hero .container .hero__content {
-    width: 80%;
-}
-
-@media screen and (width < 1200px) {
-    .page--skin-ebx-vs-surgery .hero .container .hero__content {
-        width: 90%;
-    }
-}
-
-@media screen and (width < 900px) {
-    .page--skin-ebx-vs-surgery .hero .container {
-        width: 96%;
-    }
-}
-
-.page--skin-ebx-vs-surgery .hero .hero__content {
-    align-items: flex-start;
-}
-
-.page--skin-ebx-vs-surgery .hero .hero__title {
-    text-align: left;
-    font-size: 260%;
-}
-
-@media screen and (width < 700px) {
-    .page--skin-ebx-vs-surgery .hero .hero__title {
         text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
     }
 }
@@ -668,31 +618,9 @@
     }
 }
 
-.page--patient-experience .hero .hero__content {
-    align-items: flex-start;
-}
-
 .page--patient-experience .hero .hero__title {
-    text-align: left;
-    transform: translateY(1em);
     color: #111;
     text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 30px #fff, 0 0 30px #fff;
-}
-
-.page--patient-experience .hero .container .hero__content {
-    width: 80%;
-}
-
-@media screen and (width < 1200px) {
-    .page--patient-experience .hero .container .hero__content {
-        width: 90%;
-    }
-}
-
-@media screen and (width < 900px) {
-    .page--patient-experience .hero .container {
-        width: 96%;
-    }
 }
 
 
@@ -719,9 +647,8 @@
 
 
 
-
 .page--our-partners .header-bar .row {
-background-color: rgba(255,255,255,.5);
+    background-color: rgba(255, 255, 255, .5);
 }
 
 .page--our-partners .hero .row {
@@ -745,35 +672,10 @@ background-color: rgba(255,255,255,.5);
     }
 }
 
-.page--our-partners .hero .hero__content {
-    align-items: flex-start;
-}
-
-.page--our-partners .hero .hero__title {
-    text-align: left;
-    transform: translateY(1em);
-}
-
 @media screen and (width < 900px) {
-.page--our-partners .hero .hero__title {
-    transform: unset;
-    max-width: 350px;
-}
-}
-
-.page--our-partners .hero .container .hero__content {
-    width: 80%;
-}
-
-@media screen and (width < 1200px) {
-    .page--our-partners .hero .container .hero__content {
-        width: 90%;
-    }
-}
-
-@media screen and (width < 900px) {
-    .page--our-partners .hero .container {
-        width: 96%;
+    .page--our-partners .hero .hero__title {
+        transform: unset;
+        max-width: 350px;
     }
 }
 

@@ -49,7 +49,7 @@
 
 .versus-box-item__list {
     display: grid;
-    grid-template-rows: 6em repeat(5, 1fr);
+    grid-template-rows: 7.2em repeat(5, 1fr);
     gap: 10px;
     gap: calc(.5 * var(--size-base));
     height: 100%;

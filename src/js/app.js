@@ -26,6 +26,11 @@ function adjustSubmenuPosition(submenu) {
     }
 }
 
+
+
+
+
+
 // Обработчик клика по меню
 headerNavMenu.addEventListener('click', (event) => {
     const e = event.target;
@@ -67,6 +72,7 @@ document.addEventListener('click', (event) => {
 
 
 
+
 // Обработчик отправки формы
 document.getElementById('contactForm').addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -100,6 +106,7 @@ document.getElementById('contactForm').addEventListener('submit', async (event) 
 
 
 
+
 /* copyright year */
 document.addEventListener('DOMContentLoaded', () => {
     const copyYear = document.getElementById("footer-second-copy__year");
@@ -110,8 +117,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+/* does scroll the block after page loading */
 window.addEventListener('load', () => {
-    const block = document.querySelector('.cards-group--end'); // Выберите ваш блок
-    block.scrollLeft = block.scrollWidth; // Прокрутка вправо до конца
-  });
+    const block = document.querySelector('.cards-group--end');
+    block.scrollLeft = block.scrollWidth;
+});
+
+
+
+
+
+
+/* go to visit section */
+function goToVisit() {
+    document.getElementById('visit').scrollIntoView({ behavior: 'smooth' });
+}
+
+
+
+
+
+/* go to contact's page */
+function goToContact() {
+    window.location.href = './contact.html';
+}
