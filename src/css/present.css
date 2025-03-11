@@ -16,7 +16,8 @@
     .present .row {
         background-image: url(../img/present-thin.jpg);
         background-size: 300px auto;
-        padding-bottom: 400px;
+        padding-bottom: 40px;
+        padding-bottom: calc(2 * var(--size-base, 20px));
     }
 }
 

@@ -14,7 +14,7 @@
 .partners-bar .container {
     display: flex;
     flex-direction: row;
-    max-width: 1000px;
+    max-width: 1020px;
     margin: 0 auto;
     gap: 40px;
     gap: calc(2 * var(--size-base, 20px));
