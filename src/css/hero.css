@@ -500,6 +500,26 @@
 
 
 
+.page--inner--video .hero .row {
+    position: relative;
+}
+
+.page--inner--video .hero__background-video {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
 /* Page modification */
 .page--electronic-brachytherapy .hero .row {
     background-color: #212121;
@@ -641,6 +661,10 @@
         background-size: auto 500px;
         background-position-x: calc(.5 * (100vw - 600px));
     }
+}
+
+.page--patient-stories .hero .hero__title {
+    color: white;
 }
 
 

@@ -1,0 +1,27 @@
+<section class="hero">
+    <div class="row">
+        <video class="hero__background-video" autoplay loop muted playsinline poster="img/@@preview.jpg">
+            <source src="img/@@video.mp4" type="video/mp4">
+            <picture>
+                <source srcset="img/@@preview.avif" type="image/avif">
+                <source srcset="img/@@preview.webp" type="image/webp">
+                <img src="img/@@preview.jpg" alt="preview | Meridian park">
+            </picture>
+            <p>
+                Your browser does not support the video tag
+            </p>
+        </video>
+        <div class="col">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">@@title</h1>
+                </div>
+                <div class="hero__cardsbox">
+                    @@for (var i = 0; i < cardsboxitems.length; i++) {
+                        <a class="hero-cardsbox__item" href="`+cardsboxitems[i].link+`">`+cardsboxitems[i].title+`</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
