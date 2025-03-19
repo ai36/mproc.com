@@ -64,6 +64,10 @@ a {
     text-decoration: none;
 }
 
+button span {
+    white-space: nowrap;
+}
+
 b {
     font-weight: normal;
 }

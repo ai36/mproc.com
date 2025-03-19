@@ -199,8 +199,9 @@
 .page--inner .content .container figure {
     max-width: 500px;
     width: 100%;
-    margin: 60px auto 80px auto;
-    margin: calc(3 * var(--size-base, 20px)) auto calc(4 * var(--size-base, 20px)) auto;
+    margin: 0 auto;
+    /* margin: 60px auto 80px auto;
+    margin: calc(3 * var(--size-base, 20px)) auto calc(4 * var(--size-base, 20px)) auto; */
 
     background-color: #deedf0;
     background-color: var(--color-bg-softcyan, #deedf0);
