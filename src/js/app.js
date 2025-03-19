@@ -141,3 +141,20 @@ function goToVisit() {
 function goToContact() {
     window.location.href = './contact.html';
 }
+
+
+
+
+
+/* video with video preview */
+const video80Wrapper = document.querySelector(".video80-wrapper");
+const video80Preview = document.querySelector(".video80-item__preview");
+const video80video = document.querySelector(".video80-item__video");
+const video80button = document.querySelector(".video80-item__playbutton");
+
+video80Wrapper.addEventListener('click', () => {
+    video80Preview.style.display = "none";
+    video80button.style.display = "none";
+    video80video.style.display = "block";
+    video80video.play();
+});
