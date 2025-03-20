@@ -5,6 +5,13 @@
     position: relative;
 }
 
+@media screen and (width < 700px) {
+    .video80-wrapper {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
 .video80-item__video {
     width: 100%;
     aspect-ratio: 940/544;

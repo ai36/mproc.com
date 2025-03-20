@@ -19,6 +19,10 @@
         padding-bottom: 40px;
         padding-bottom: calc(2 * var(--size-base, 20px));
     }
+
+    .page--home .present .row {
+        height: 960px;
+    }
 }
 
 .present .col {
