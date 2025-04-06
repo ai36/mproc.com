@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Thank You for Contacting Meredian Park | We'll Be in Touch Soon",
+"desc": "Thank you for reaching out to Meredian Park! Your submission has been received, and our team will contact you shortly. Explore more about our community in the meantime - Meridian park",
+"url": "//mproc.com/thank-you.html",
+"canonical": "https://mproc.com/thank-you.html",
+"image": "//mproc.com/img/thank-you.jpg",
+})
+
+<body class="page page--inner page--hero-off">
+    <script>
+        gtag("event", "thank_you", { page_location: window.location.href });
+    </script>
+
+    <div id="root">
+
+        @@include('html/header.html')
+
+        <main>
+
+            @@include('html/hero-off.html', {
+            "title": "Thank You for Your Submission!",
+            "subtitle": "We Don't Just Treat, We Care",
+            "desc": "Compassionate Cancer Care Close to Home",
+            })
+
+            <section class="content">
+                <div class="row">
+                    <div class="col">
+                        <div class="container">
+                            <p>We appreciate you reaching out to Meridian Park. Your message has been successfully sent, and our team will get back to you as soon as possible.</p>
+    
+                            <p>In the meantime, feel free to explore more about our advanced medical therapies, amenities, and lifestyle offerings. If you have any urgent questions, don’t hesitate to contact us directly at <a href="mailto:office@mproc.com">office@mproc.com</a> or call us at <a href="tel:+15036924843">+1 503-692-4843</a>.</p>
+                            
+                            <button class="present-content__action present-content__action--bg-navy" onClick="window.location.href='index.html';">
+                                Return to Homepage
+                                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            @@include('html/reviews.html')
+
+        </main>
+        @@include('html/footer.html')
+    </div>
+    <script defer="defer" src="js/app.min.js"></script>
+</body>
+
+</html>

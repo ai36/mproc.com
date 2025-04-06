@@ -30,8 +30,8 @@
     left: 50%;
     translate: -50% -50%;
 
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     background-color: #000a;
     display: grid;
@@ -39,8 +39,8 @@
 }
 
 .video80-item__playbutton svg {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     fill: white;
     translate: 10% 0;
