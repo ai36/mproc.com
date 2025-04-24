@@ -1,10 +1,14 @@
 User-Agent: Googlebot
+Disallow: /wp-content/*
+Disallow: /wp-content2/*
 Disallow: /404.html
 Disallow: /thank-you.html
 Disallow: /privacy-policy.html
 Allow: /
 
 User-Agent: *
+Disallow: /wp-content/*
+Disallow: /wp-content2/*
 Disallow: /404.html
 Disallow: /thank-you.html
 Disallow: /privacy-policy.html
