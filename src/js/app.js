@@ -137,3 +137,8 @@ if (video80Wrapper) {
         video80video.play();
     });
 }
+
+/* phone_click key action */
+function clickPhone() {
+    gtag("event", "phone_click", { page_location: window.location.href });
+}
