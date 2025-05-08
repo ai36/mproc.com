@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url("variables.css");
 @import url("globals.css");
 @import url("base.css");
 @import url("header.css");
@@ -15,4 +16,5 @@
 @import url("modules/versus-box.css");
 @import url("modules/partners-bar.css");
 @import url("modules/visit.css");
+@import url("modules/button-go-to-form.css");
 @import url("modules/video80-with-videopreview.css");

@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = htmlspecialchars($_POST['name']);
     $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
     $phone = htmlspecialchars($_POST['phone']);
-    $referringPhysician = htmlspecialchars($_POST['referringPhysician']);
+    // $referringPhysician = htmlspecialchars($_POST['referringPhysician']);
 
     // Проверка email
     if (!$email) {
@@ -20,7 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $to = 'office@mproc.com'; // Целевой email
     $subject = "[Mproc.com] Message from $name";
-    $body = "Name: $name\nEmail: $email\nPhone: $phone\nReferring physician: $referringPhysician";
+    // $body = "Name: $name\nEmail: $email\nPhone: $phone\nReferring physician: $referringPhysician";
+    $body = "Name: $name\nEmail: $email\nPhone: $phone";
 
     $headers = [
         "From: $email",

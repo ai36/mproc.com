@@ -709,3 +709,58 @@
         text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
     }
 }
+
+
+
+
+
+/* hero-off */
+.page--hero-off .header-bar .container {
+    color: var(--color-text, #444);
+}
+
+.page--hero-off .hero {
+    margin-bottom: 0;
+}
+
+.page--hero-off .hero .row {
+    height: 300px;
+}
+
+.page--hero-off .hero .hero__title {
+    font-size: 340%;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.page--hero-off .content .col {
+    padding: calc(2 * var(--size-base));
+    padding-bottom: 0;
+}
+
+.page--hero-off .content .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    text-align: center;
+}
+
+.page--hero-off .content .container p a {
+    color: var(--color-text-accent, #02959b);
+}
+
+.page--hero-off .content .container p a:hover {
+    text-decoration: underline;
+}
+
+.page--hero-off .present-content__action {
+    margin: calc(2 * var(--size-base)) auto calc(3 * var(--size-base)) auto;
+}
+
+/* .page--hero-off .reviews .container {
+    position: absolute;
+    top: 50%;
+} */
