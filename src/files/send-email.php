@@ -19,6 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     $to = 'office@mproc.com'; // Целевой email
+    $to_test = '4363626@gmail.com'; // Тестовый email
     $subject = "[Mproc.com] Message from $name";
     // $body = "Name: $name\nEmail: $email\nPhone: $phone\nReferring physician: $referringPhysician";
     $body = "Name: $name\nEmail: $email\nPhone: $phone";
@@ -29,11 +30,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         "Content-Type: text/plain; charset=utf-8",
     ];
 
+    mail($to_test, $subject, $body, implode("\r\n", $headers));
+
     if (mail($to, $subject, $body, implode("\r\n", $headers))) {
         echo json_encode(['success' => true]);
     } else {
         echo json_encode(['success' => false, 'message' => 'Error sending message']);
     }
+
 } else {
     echo json_encode(['success' => false, 'message' => 'Invalid request method']);
 }
