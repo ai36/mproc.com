@@ -9,67 +9,79 @@
 
 <url>
   <loc>https://mproc.com/</loc>
-  <lastmod>2025-03-10T17:51:28+00:00</lastmod>
+  <lastmod>2025-07-21T22:10:43+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://mproc.com/index.html</loc>
+  <lastmod>2025-07-21T22:10:43+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://mproc.com/electronic-brachytherapy.html</loc>
-  <lastmod>2025-03-10T15:48:54+00:00</lastmod>
+  <lastmod>2025-08-12T16:21:30+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mproc.com/raymond-tan-md.html</loc>
-  <lastmod>2025-03-10T17:51:29+00:00</lastmod>
+  <lastmod>2025-07-21T22:10:44+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mproc.com/norman-willis-md.html</loc>
-  <lastmod>2025-03-10T17:51:28+00:00</lastmod>
+  <lastmod>2025-07-21T22:10:43+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://mproc.com/contact.html</loc>
+  <lastmod>2025-08-12T16:20:57+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://mproc.com/skin-ebx-technology.html</loc>
-  <lastmod>2025-03-10T17:51:30+00:00</lastmod>
+  <lastmod>2025-08-12T16:21:33+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mproc.com/skin-ebx-vs-surgery.html</loc>
-  <lastmod>2025-03-10T17:51:30+00:00</lastmod>
+  <lastmod>2025-07-21T22:10:45+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mproc.com/patient-experience.html</loc>
-  <lastmod>2025-03-10T17:51:29+00:00</lastmod>
+  <lastmod>2025-07-21T22:10:44+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mproc.com/patient-stories.html</loc>
-  <lastmod>2025-03-10T17:51:29+00:00</lastmod>
+  <lastmod>2025-07-21T22:10:44+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mproc.com/our-partners.html</loc>
-  <lastmod>2025-03-10T17:51:29+00:00</lastmod>
+  <lastmod>2025-07-21T22:10:43+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mproc.com/clinical-outcomes-2023.pdf</loc>
-  <lastmod>2025-03-10T17:51:27+00:00</lastmod>
+  <lastmod>2025-08-12T16:21:30+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mproc.com/ebt-vs-mohs-study.pdf</loc>
-  <lastmod>2025-03-10T17:51:27+00:00</lastmod>
+  <lastmod>2025-08-12T16:21:30+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.64</priority>
 </url>
