@@ -1,6 +1,6 @@
 # Radiation Oncology Care
 
-Radiation Oncology Care website - [https://mproc.com](https://mproc.com)
+Radiation Oncology Care website - [https://mproc.com](https://mproc.com/?utm_source=github&utm_medium=readme)
 
 ## Before running
 
@@ -8,7 +8,7 @@ Radiation Oncology Care website - [https://mproc.com](https://mproc.com)
 
 ## Build production version
 
-`gulp`
+`npx gulp`
 
 Destination folder: **./dist/**
 
