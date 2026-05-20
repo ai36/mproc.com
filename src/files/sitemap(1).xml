@@ -26,6 +26,18 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://mproc.com/soheila-azghadi-md.html</loc>
+  <lastmod>2026-02-20T18:21:32+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mproc.com/aaron-sabolch-md.html</loc>
+  <lastmod>2026-05-15T11:21:32+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://mproc.com/raymond-tan-md.html</loc>
   <lastmod>2025-08-12T16:21:32+00:00</lastmod>
   <changefreq>weekly</changefreq>
@@ -34,12 +46,6 @@
 <url>
   <loc>https://mproc.com/norman-willis-md.html</loc>
   <lastmod>2026-02-20T02:02:40+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mproc.com/soheila-azghadi-md.html</loc>
-  <lastmod>2026-02-20T02:02:42+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>

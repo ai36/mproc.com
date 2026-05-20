@@ -322,6 +322,8 @@
 .page--person .hero__action--bg-navy:hover {
     color: #02959b;
     color: var(--color-text-accent, #02959b);
+    background-color: #fff;
+    background-color: var(--color-bg,#fff);
     border-color: currentColor;
 }
 
