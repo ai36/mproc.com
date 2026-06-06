@@ -4,11 +4,15 @@ Radiation Oncology Care website - [https://mproc.com](https://mproc.com/?utm_sou
 
 ## Before running
 
-`npm install`
+```sh
+npm install
+```
 
 ## Build production version
 
-`npx gulp`
+```sh
+npx gulp
+```
 
 Destination folder: **./dist/**
 
